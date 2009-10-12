@@ -1,26 +1,20 @@
-using System.Configuration;
-using System.Data.SqlClient;
 using NUnit.Framework;
 
 namespace MediaLibrary.DAL
 {
     [TestFixture]
-    public class ArtistFixture
+    public class ArtistFixture : ConnectionFixture
     {
         static readonly string artistName = "Artist";
-        SqlConnection connection;
         ArtistGateway gateway;
         RecordingDataSet recordingDataSet;
         long artistId;
 
         [SetUp]
-        public void setup_and_open_connection_pass_to_gateway_setup_data_set()
+        public void setup_and_open_Connection_pass_to_gateway_setup_data_set()
         {
-            connection = new SqlConnection(ConfigurationSettings.AppSettings.Get("Catalog.Connection"));
-            connection.Open();
-
             recordingDataSet = new RecordingDataSet();
-            gateway = new ArtistGateway(connection);
+            gateway = new ArtistGateway(Connection);
             // insert a new artist getting its ID from the database
             artistId = gateway.Insert(recordingDataSet, artistName);
         }
@@ -67,7 +61,6 @@ namespace MediaLibrary.DAL
         {
             // delete the test Artist we set up in the setup method
             gateway.Delete(recordingDataSet, artistId);
-            connection.Close();
         }
     }
 }

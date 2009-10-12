@@ -1,5 +1,3 @@
-using System.Configuration;
-using System.Data.SqlClient;
 using NUnit.Framework;
 
 namespace MediaLibrary.DAL
@@ -8,19 +6,15 @@ namespace MediaLibrary.DAL
     public class GenreFixture : ConnectionFixture
     {
         static readonly string GenreName = "Rock";
-        SqlConnection connection;
         GenreGateway gateway;
         RecordingDataSet recordingDataSet;
         long genreId;
 
         [SetUp]
-        public void setup_and_open_connection_pass_to_gateway_setup_data_set()
+        public void pass_connection_to_gateway_setup_data_set()
         {
-            connection = new SqlConnection(ConfigurationSettings.AppSettings.Get("Catalog.Connection"));
-            connection.Open();
-
             recordingDataSet = new RecordingDataSet();
-            gateway = new GenreGateway(connection);
+            gateway = new GenreGateway(Connection);
             genreId = gateway.Insert(recordingDataSet, GenreName);
         }
 
@@ -64,7 +58,6 @@ namespace MediaLibrary.DAL
         public void tear_down()
         {
             gateway.Delete(recordingDataSet, genreId);
-            connection.Close();
         }
     }
 }
