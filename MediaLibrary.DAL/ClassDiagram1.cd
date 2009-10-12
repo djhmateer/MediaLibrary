@@ -14,11 +14,11 @@
       <FileName>ArtistGateway.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="MediaLibrary.DAL.SqlConnectionFixture">
+  <Class Name="MediaLibrary.DAL.SqlconnectionectionFixture">
     <Position X="0.5" Y="6.5" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAEAAAAAAAAQAgAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
-      <FileName>ConnectionFixture.cs</FileName>
+      <FileName>connectionectionFixture.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="MediaLibrary.DAL.IdGenerator">
