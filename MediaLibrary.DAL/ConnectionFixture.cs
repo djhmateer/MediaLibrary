@@ -1,33 +1,29 @@
 ﻿using System.Configuration;
-using System.Data;
 using System.Data.SqlClient;
 using NUnit.Framework;
 
 namespace MediaLibrary.DAL
 {
     [TestFixture]
-    public class ConnectionFixture
+    public abstract class ConnectionFixture
     {
-        string connectionString;
+        SqlConnection connection;
 
-        [SetUp]
-        public void RetrieveConnectionString()
+        public SqlConnection Connection
         {
-            connectionString = ConfigurationSettings.AppSettings.Get("Catalog.Connection");
+            get { return connection; }
         }
 
-        [Test]
-        public void CanRetrieveConnectionString()
+        [TestFixtureSetUp]
+        public void OpenConnection()
         {
-            Assert.IsNotNull(connectionString);
-        }
-
-        [Test]
-        public void ConnectionIsOpen()
-        {
-            SqlConnection connection = new SqlConnection(connectionString);
+            connection = new SqlConnection(ConfigurationSettings.AppSettings.Get("Catalog.Connection"));
             connection.Open();
-            Assert.AreEqual(ConnectionState.Open, connection.State);
+        }
+
+        [TestFixtureTearDown]
+        public void CloseConnection()
+        {
             connection.Close();
         }
     }

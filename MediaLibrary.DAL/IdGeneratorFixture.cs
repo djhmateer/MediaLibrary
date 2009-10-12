@@ -1,4 +1,3 @@
-using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using NUnit.Framework;
@@ -6,34 +5,19 @@ using NUnit.Framework;
 namespace MediaLibrary.DAL
 {
     [TestFixture]
-    public class IdGeneratorFixture
+    public class IdGeneratorFixture : ConnectionFixture
     {
-        SqlConnection connection;
-
-        [SetUp]
-        public void open_connection()
-        {
-            connection = new SqlConnection(ConfigurationSettings.AppSettings.Get("Catalog.Connection"));
-            connection.Open();
-        }
-
         [Test]
         public void GetNextIdIncrement()
         {
-            SqlCommand sqlCommand = new SqlCommand("select nextId from PKSequence where tableName = @tableName", connection);
+            SqlCommand sqlCommand = new SqlCommand("select nextId from PKSequence where tableName = @tableName", Connection);
             sqlCommand.Parameters.Add("@tableName", SqlDbType.VarChar).Value = "Artist";
 
             long nextId = (long) sqlCommand.ExecuteScalar();
-            long nextIdFromGenerator = IdGenerator.GetNextId("Artist", connection);
+            long nextIdFromGenerator = IdGenerator.GetNextId("Artist", Connection);
             Assert.AreEqual(nextId, nextIdFromGenerator);
             nextId = (long) sqlCommand.ExecuteScalar();
             Assert.AreEqual(nextId, nextIdFromGenerator + 1);
-        }
-
-        [TearDown]
-        public void close_connection()
-        {
-            connection.Close();
         }
     }
 }

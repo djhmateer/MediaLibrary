@@ -5,7 +5,7 @@ using NUnit.Framework;
 namespace MediaLibrary.DAL
 {
     [TestFixture]
-    public class GenreFixture
+    public class GenreFixture : ConnectionFixture
     {
         static readonly string GenreName = "Rock";
         SqlConnection connection;
