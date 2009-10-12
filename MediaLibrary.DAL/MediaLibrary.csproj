@@ -63,6 +63,9 @@
     </Compile>
     <Compile Include="ConnectionFixture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReviewerGateway.cs" />
+    <Compile Include="ReviewReviewerFixture.cs" />
+    <Compile Include="ReviewGateway.cs" />
     <Compile Include="SimpleDatabaseTests.cs" />
   </ItemGroup>
   <ItemGroup>

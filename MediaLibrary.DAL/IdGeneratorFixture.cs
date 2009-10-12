@@ -2,7 +2,7 @@ using System.Data;
 using System.Data.SqlClient;
 using NUnit.Framework;
 
-namespace MediaLibrary.DAL
+namespace MediaLibrary
 {
     [TestFixture]
     public class IdGeneratorFixture : ConnectionFixture

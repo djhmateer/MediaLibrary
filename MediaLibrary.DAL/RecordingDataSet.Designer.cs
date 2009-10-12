@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace MediaLibrary.DAL {
+namespace MediaLibrary {
     
     
     /// <summary>

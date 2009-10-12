@@ -1,6 +1,6 @@
 using NUnit.Framework;
 
-namespace MediaLibrary.DAL
+namespace MediaLibrary
 {
     [TestFixture]
     public class GenreFixture : ConnectionFixture

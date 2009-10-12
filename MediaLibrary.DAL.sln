@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaLibrary.DAL", "MediaLibrary.DAL\MediaLibrary.DAL.csproj", "{0811A30D-08B4-4CA8-87F7-1FE1F6B2F334}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaLibrary", "MediaLibrary.DAL\MediaLibrary.csproj", "{0811A30D-08B4-4CA8-87F7-1FE1F6B2F334}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

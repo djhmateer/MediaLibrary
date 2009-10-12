@@ -1,4 +1,4 @@
-﻿namespace MediaLibrary.DAL {
+﻿namespace MediaLibrary {
     
     
     public partial class RecordingDataSet {

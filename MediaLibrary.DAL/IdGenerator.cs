@@ -1,7 +1,7 @@
 using System.Data;
 using System.Data.SqlClient;
 
-namespace MediaLibrary.DAL
+namespace MediaLibrary
 {
     public class IdGenerator
     {
