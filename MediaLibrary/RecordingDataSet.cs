@@ -1,4 +1,4 @@
-﻿namespace MediaLibrary {
+namespace MediaLibrary {
     
     
     public partial class RecordingDataSet {

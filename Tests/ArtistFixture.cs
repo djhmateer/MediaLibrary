@@ -1,6 +1,7 @@
 using NUnit.Framework;
+using MediaLibrary;
 
-namespace MediaLibrary
+namespace Tests
 {
     [TestFixture]
     public class ArtistFixture : ConnectionFixture

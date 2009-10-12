@@ -3,7 +3,7 @@ using System.Data;
 using System.Data.SqlClient;
 using NUnit.Framework;
 
-namespace MediaLibrary
+namespace Tests
 {
     [TestFixture]
     public class SimpleDatabaseTests

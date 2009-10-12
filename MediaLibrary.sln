@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaLibrary", "MediaLibrary\MediaLibrary.csproj", "{0811A30D-08B4-4CA8-87F7-1FE1F6B2F334}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{D4EC22F6-AB63-49BB-BBA0-D652D0CC0C94}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{0811A30D-08B4-4CA8-87F7-1FE1F6B2F334}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0811A30D-08B4-4CA8-87F7-1FE1F6B2F334}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0811A30D-08B4-4CA8-87F7-1FE1F6B2F334}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4EC22F6-AB63-49BB-BBA0-D652D0CC0C94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4EC22F6-AB63-49BB-BBA0-D652D0CC0C94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4EC22F6-AB63-49BB-BBA0-D652D0CC0C94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4EC22F6-AB63-49BB-BBA0-D652D0CC0C94}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

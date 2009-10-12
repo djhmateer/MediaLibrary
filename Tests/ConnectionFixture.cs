@@ -2,7 +2,7 @@
 using System.Data.SqlClient;
 using NUnit.Framework;
 
-namespace MediaLibrary
+namespace Tests
 {
     [TestFixture]
     public abstract class ConnectionFixture
