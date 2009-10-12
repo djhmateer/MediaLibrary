@@ -8,11 +8,23 @@ namespace MediaLibrary.DAL
     [TestFixture]
     public class SqlConnectionFixture
     {
+        string connectionString;
+
+        [SetUp]
+        public void RetrieveConnectionString()
+        {
+            connectionString = ConfigurationSettings.AppSettings.Get("Catalog.Connection");
+        }
+
+        [Test]
+        public void CanRetrieveConnectionString()
+        {
+            Assert.IsNotNull(connectionString);
+        }
+
         [Test]
         public void ConnectionIsOpen()
         {
-            string connectionString = ConfigurationSettings.AppSettings.Get("Catalog.Connection");
-            Assert.IsNotNull(connectionString);
             SqlConnection connection = new SqlConnection(connectionString);
             connection.Open();
             Assert.AreEqual(ConnectionState.Open, connection.State);

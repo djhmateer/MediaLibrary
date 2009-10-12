@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MediaLibrary.DAL.ArtistFixture">
+    <Position X="0.5" Y="2" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ArtistFixture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MediaLibrary.DAL.ArtistGateway">
+    <Position X="3.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAAAAAAAAADAAAAAAUJAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ArtistGateway.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MediaLibrary.DAL.SqlConnectionFixture">
+    <Position X="0.5" Y="6.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAQAgAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ConnectionFixture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MediaLibrary.DAL.IdGenerator">
+    <Position X="3.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IdGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MediaLibrary.DAL.RecordingDataSet">
+    <Position X="7.25" Y="0.5" Width="2.75" />
+    <NestedTypes>
+      <Class Name="MediaLibrary.DAL.RecordingDataSet.Track" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="MediaLibrary.DAL.RecordingDataSet.GenreChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="MediaLibrary.DAL.RecordingDataSet.ReviewerChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="MediaLibrary.DAL.RecordingDataSet.Review" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="MediaLibrary.DAL.RecordingDataSet.Recording" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="MediaLibrary.DAL.RecordingDataSet.Label" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="MediaLibrary.DAL.RecordingDataSet.LabelChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="MediaLibrary.DAL.RecordingDataSet.Reviewer" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="MediaLibrary.DAL.RecordingDataSet.LabelsDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="MediaLibrary.DAL.RecordingDataSet.ReviewsDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="MediaLibrary.DAL.RecordingDataSet.LabelChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Delegate Name="MediaLibrary.DAL.RecordingDataSet.ReviewChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="MediaLibrary.DAL.RecordingDataSet.RecordingsDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="MediaLibrary.DAL.RecordingDataSet.TrackChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="MediaLibrary.DAL.RecordingDataSet.ArtistChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="MediaLibrary.DAL.RecordingDataSet.ReviewersDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="MediaLibrary.DAL.RecordingDataSet.RecordingChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="MediaLibrary.DAL.RecordingDataSet.Genre" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="MediaLibrary.DAL.RecordingDataSet.ArtistsDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="MediaLibrary.DAL.RecordingDataSet.ReviewChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="MediaLibrary.DAL.RecordingDataSet.TracksDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="MediaLibrary.DAL.RecordingDataSet.ReviewerChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Delegate Name="MediaLibrary.DAL.RecordingDataSet.RecordingChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="MediaLibrary.DAL.RecordingDataSet.ArtistChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="MediaLibrary.DAL.RecordingDataSet.GenreChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="MediaLibrary.DAL.RecordingDataSet.GenresDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="MediaLibrary.DAL.RecordingDataSet.TrackChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="MediaLibrary.DAL.RecordingDataSet.Artist" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AGAAgEhaF9AAAApABQKAQgEAAAgCQBgAAEAACAsABDA=</HashCode>
+      <FileName>RecordingDataSet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MediaLibrary.DAL.Properties.Settings">
+    <Position X="0.5" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

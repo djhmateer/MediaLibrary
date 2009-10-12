@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="RecordingDataSet" targetNamespace="http://nunit.org/book/RecordingDataSet.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns:codegen="urn:schemas-microsoft-com:xml-msprop"
+	xmlns="http://nunit.org/book/RecordingDataSet.xsd" xmlns:mstns="http://nunit.org/book/RecordingDataSet.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="RecordingDataSet" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Artist" codegen:typedName="Artist" codegen:typedPlural="Artists">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="id" type="xs:long" codegen:typedName="Id" />
+							<xs:element name="name" type="xs:string" codegen:typedName="Name" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Genre" codegen:typedName="Genre" codegen:typedPlural="Genres">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="id" type="xs:long" codegen:typedName="Id" />
+							<xs:element name="name" type="xs:string" codegen:typedName="Name" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Label" codegen:typedName="Label" codegen:typedPlural="Labels">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="id" type="xs:long" codegen:typedName="Id" />
+							<xs:element name="name" type="xs:string" codegen:typedName="Name" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Recording" codegen:typedName="Recording" codegen:typedPlural="Recordings">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="id" type="xs:long" codegen:typedName="Id" />
+							<xs:element name="title" type="xs:string" codegen:typedName="Title" />
+							<xs:element name="releasedate" type="xs:dateTime" codegen:typedName="ReleaseDate" />
+							<xs:element name="labelid" type="xs:long" codegen:typedName="LabelId"/>
+							<xs:element name="artistid" type="xs:long" codegen:typedName="ArtistId"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Review" codegen:typedName="Review" codegen:typedPlural="Reviews">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="id" type="xs:long" codegen:typedName="Id" />
+							<xs:element name="reviewerid" type="xs:long" minOccurs="0" codegen:typedName="ReviewerId"/>
+							<xs:element name="recordingid" type="xs:long" minOccurs="0" codegen:typedName="RecordingId"/>
+							<xs:element name="rating" type="xs:int" codegen:typedName="Rating" />
+							<xs:element name="review" type="xs:string" minOccurs="0" codegen:typedName="Content" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Reviewer" codegen:typedName="Reviewer" codegen:typedPlural="Reviewers">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="id" type="xs:long" codegen:typedName="Id" />
+							<xs:element name="name" type="xs:string" codegen:typedName="Name" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Track" codegen:typedName="Track" codegen:typedPlural="Tracks">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="id" type="xs:long" codegen:typedName="Id" />
+							<xs:element name="title" type="xs:string" codegen:typedName="Title" />
+							<xs:element name="duration" type="xs:int" codegen:typedName="Duration"/>
+							<xs:element name="genreid" type="xs:long" minOccurs="0" codegen:typedName="GenreId" />
+							<xs:element name="artistid" type="xs:long" minOccurs="0" codegen:typedName="ArtistId" />
+							<xs:element name="recordingid" type="xs:long" minOccurs="0" codegen:typedName="RecordingId" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="ArtistPK" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Artist" />
+			<xs:field xpath="mstns:id" />
+		</xs:unique>
+		<xs:unique name="GenrePK" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Genre" />
+			<xs:field xpath="mstns:id" />
+		</xs:unique>
+		<xs:unique name="LabelPK" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Label" />
+			<xs:field xpath="mstns:id" />
+		</xs:unique>
+		<xs:unique name="RecordingPK" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Recording" />
+			<xs:field xpath="mstns:id" />
+		</xs:unique>
+		<xs:unique name="ReviewPK" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Review" />
+			<xs:field xpath="mstns:id" />
+		</xs:unique>
+		<xs:unique name="ReviewerPK" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Reviewer" />
+			<xs:field xpath="mstns:id" />
+		</xs:unique>
+		<xs:unique name="TrackPK" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Track" />
+			<xs:field xpath="mstns:id" />
+		</xs:unique>
+	</xs:element>
+			<xs:annotation>
+			<xs:appinfo>
+				<msdata:Relationship name="TrackOfTheRecording" msdata:parent="Recording" msdata:child="Track" msdata:parentkey="id"
+					msdata:childkey="recordingid" />
+				<msdata:Relationship name="GenreOfTheTrack" msdata:parent="Genre" msdata:child="Track" msdata:parentkey="id"
+					msdata:childkey="genreid" />
+				<msdata:Relationship name="ArtistOfTheTrack" msdata:parent="Artist" msdata:child="Track" msdata:parentkey="id"
+					msdata:childkey="artistid" />
+				<msdata:Relationship name="ArtistOfTheRecording" msdata:parent="Artist" msdata:child="Recording" msdata:parentkey="id"
+					msdata:childkey="artistid" />
+				<msdata:Relationship name="LabelOfTheRecording" msdata:parent="Label" msdata:child="Recording" msdata:parentkey="id"
+					msdata:childkey="labelid" />
+				<msdata:Relationship name="ReviewerOfTheRecording" msdata:parent="Reviewer" msdata:child="Review" msdata:parentkey="id"
+					msdata:childkey="reviewerid" />
+				<msdata:Relationship name="ReviewsOfTheRecording" msdata:parent="Recording" msdata:child="Review" msdata:parentkey="id"
+					msdata:childkey="recordingid" />
+			</xs:appinfo>
+		</xs:annotation>
+
+</xs:schema>
