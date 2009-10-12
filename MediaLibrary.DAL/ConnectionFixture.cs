@@ -6,7 +6,7 @@ using NUnit.Framework;
 namespace MediaLibrary.DAL
 {
     [TestFixture]
-    public class SqlConnectionFixture
+    public class ConnectionFixture
     {
         string connectionString;
 

@@ -14,11 +14,11 @@
       <FileName>ArtistGateway.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="MediaLibrary.DAL.SqlconnectionectionFixture">
+  <Class Name="MediaLibrary.DAL.SqlConnectionFixture">
     <Position X="0.5" Y="6.5" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAEAAAAAAAAQAgAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
-      <FileName>connectionectionFixture.cs</FileName>
+      <FileName>ConnectionFixture.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="MediaLibrary.DAL.IdGenerator">
@@ -119,12 +119,6 @@
     <TypeIdentifier>
       <HashCode>AGAAgEhaF9AAAApABQKAQgEAAAgCQBgAAEAACAsABDA=</HashCode>
       <FileName>RecordingDataSet.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="MediaLibrary.DAL.Properties.Settings">
-    <Position X="0.5" Y="3.75" Width="2" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAABAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
     </TypeIdentifier>
   </Class>
   <Font Name="Tahoma" Size="8.25" />

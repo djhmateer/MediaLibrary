@@ -48,7 +48,10 @@
   <ItemGroup>
     <Compile Include="ArtistFixture.cs" />
     <Compile Include="ArtistGateway.cs" />
+    <Compile Include="GenreFixture.cs" />
+    <Compile Include="GenreGateway.cs" />
     <Compile Include="IdGenerator.cs" />
+    <Compile Include="IdGeneratorFixture.cs" />
     <Compile Include="RecordingDataSet.cs">
       <DependentUpon>RecordingDataSet.xsd</DependentUpon>
       <SubType>Component</SubType>
