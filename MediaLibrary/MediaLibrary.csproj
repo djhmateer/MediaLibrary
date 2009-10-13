@@ -46,8 +46,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArtistGateway.cs" />
+    <Compile Include="Catalog.cs" />
     <Compile Include="GenreGateway.cs" />
     <Compile Include="IdGenerator.cs" />
+    <Compile Include="LabelGateway.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
@@ -55,6 +57,7 @@
     </Compile>
     <Compile Include="RecordingDataSet.cs">
       <DependentUpon>RecordingDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="RecordingDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -62,8 +65,10 @@
       <DependentUpon>RecordingDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecordingGateway.cs" />
     <Compile Include="ReviewerGateway.cs" />
     <Compile Include="ReviewGateway.cs" />
+    <Compile Include="TrackGateway.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />

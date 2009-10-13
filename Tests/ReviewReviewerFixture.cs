@@ -19,10 +19,10 @@ namespace Tests
 
             RecordingDataSet.Review review = reviewGateway.FindById(reviewId, recordingDataSet);
 
-            review.ReviewerId = reviewId;
+            review.ReviewerId = reviewerId;
             reviewGateway.Update(recordingDataSet);
 
-            Assert.AreEqual(reviewId, review.Reviewer.Id);
+            Assert.AreEqual(reviewerId, review.Reviewer.Id);
 
             reviewGateway.Delete(recordingDataSet, reviewId);
             reviewerGateway.Delete(recordingDataSet, reviewerId);

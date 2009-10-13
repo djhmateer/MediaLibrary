@@ -4,7 +4,6 @@ using NUnit.Framework;
 
 namespace Tests
 {
-    [TestFixture]
     public abstract class ConnectionFixture
     {
         SqlConnection connection;
@@ -17,7 +16,9 @@ namespace Tests
         [TestFixtureSetUp]
         public void OpenConnection()
         {
-            connection = new SqlConnection(ConfigurationSettings.AppSettings.Get("Catalog.Connection"));
+            //connection = new SqlConnection(ConfigurationSettings.AppSettings.Get("Catalog.Connection"));
+            connection = new SqlConnection("Data Source=DAVEXPLAPTOP;Initial Catalog=catalog;Integrated Security=True");
+            
             connection.Open();
         }
 

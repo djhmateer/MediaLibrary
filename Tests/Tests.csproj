@@ -47,15 +47,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArtistFixture.cs" />
+    <Compile Include="CatalogFixture.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="ConnectionFixture.cs" />
     <Compile Include="GenreFixture.cs" />
     <Compile Include="IdGeneratorFixture.cs" />
+    <Compile Include="LabelFixture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecordingBuilder.cs" />
+    <Compile Include="RecordingFixture.cs" />
+    <Compile Include="RecordingGatewayFixture.cs" />
     <Compile Include="ReviewerFixture.cs" />
     <Compile Include="ReviewFixture.cs" />
     <Compile Include="ReviewReviewerFixture.cs" />
     <Compile Include="SimpleDatabaseTests.cs" />
+    <Compile Include="TrackFixture.cs" />
+    <Compile Include="TrackRecordingFixture.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MediaLibrary\MediaLibrary.csproj">

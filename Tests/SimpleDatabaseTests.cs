@@ -95,7 +95,7 @@ namespace Tests
             connection.Open();
             SqlCommand cmd = new SqlCommand("select count(*) from Artist", connection);
             count = (int) cmd.ExecuteScalar();
-            Assert.AreEqual(4, count);
+            Assert.Greater(count,1);
             connection.Close();
         }
 
