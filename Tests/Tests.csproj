@@ -46,23 +46,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ArtistFixture.cs" />
+    <Compile Include="Entities\ArtistFixture.cs" />
     <Compile Include="CatalogFixture.cs" />
-    <Compile Include="Class1.cs" />
     <Compile Include="ConnectionFixture.cs" />
-    <Compile Include="GenreFixture.cs" />
-    <Compile Include="IdGeneratorFixture.cs" />
-    <Compile Include="LabelFixture.cs" />
+    <Compile Include="Entities\GenreFixture.cs" />
+    <Compile Include="Utilities\IdGeneratorFixture.cs" />
+    <Compile Include="Entities\LabelFixture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RecordingBuilder.cs" />
     <Compile Include="RecordingFixture.cs" />
-    <Compile Include="RecordingGatewayFixture.cs" />
-    <Compile Include="ReviewerFixture.cs" />
-    <Compile Include="ReviewFixture.cs" />
-    <Compile Include="ReviewReviewerFixture.cs" />
-    <Compile Include="SimpleDatabaseTests.cs" />
-    <Compile Include="TrackFixture.cs" />
-    <Compile Include="TrackRecordingFixture.cs" />
+    <Compile Include="Entities\RecordingGatewayFixture.cs" />
+    <Compile Include="Entities\ReviewerFixture.cs" />
+    <Compile Include="Entities\ReviewFixture.cs" />
+    <Compile Include="Relationships\ReviewReviewerFixture.cs" />
+    <Compile Include="Utilities\SimpleDatabaseTests.cs" />
+    <Compile Include="Entities\TrackFixture.cs" />
+    <Compile Include="Relationships\TrackRecordingFixture.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MediaLibrary\MediaLibrary.csproj">
@@ -72,6 +71,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
