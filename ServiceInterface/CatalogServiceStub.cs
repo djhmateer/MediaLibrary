@@ -1,4 +1,3 @@
-using System;
 using MediaLibrary;
 
 namespace ServiceInterface
@@ -14,6 +13,7 @@ namespace ServiceInterface
 
         public RecordingDataSet.Recording FindByRecordingId(long id)
         {
+            if (id != recording.Id) return null;
             return recording;
         }
     }

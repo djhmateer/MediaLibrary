@@ -65,13 +65,16 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StubCatalogServiceFixture.cs" />
+    <Compile Include="CatalogServiceStubFixture.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MediaLibrary\MediaLibrary.csproj">
       <Project>{0811A30D-08B4-4CA8-87F7-1FE1F6B2F334}</Project>
       <Name>MediaLibrary</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recording.xsd" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
