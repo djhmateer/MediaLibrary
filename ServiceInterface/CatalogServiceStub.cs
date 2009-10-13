@@ -11,10 +11,13 @@ namespace ServiceInterface
             this.recording = recording;
         }
 
-        public RecordingDataSet.Recording FindByRecordingId(long id)
+        public RecordingDto FindByRecordingId(long id)
         {
             if (id != recording.Id) return null;
-            return recording;
+            RecordingDto dto = new RecordingDto();
+            dto.id = recording.Id;
+            dto.title = recording.Title;
+            return dto;
         }
     }
 }

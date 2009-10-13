@@ -7,43 +7,47 @@ namespace ServiceInterface
     public class CatalogServiceStubFixture
     {
         RecordingDataSet.Recording recording;
-        RecordingDataSet.Recording actual;
+        // a flattened representation of a recording
+        RecordingDto dto;
         CatalogServiceStub service;
 
         [SetUp]
         public void SetUp()
         {
             // create a test recording in memory
-            recording = CreateRecording();
+            //recording = CreateRecording();
+            recording = InMemoryRecordingBuilder.Make();
+
             service = new CatalogServiceStub(recording);
-            actual = service.FindByRecordingId(recording.Id);
+            dto = service.FindByRecordingId(recording.Id);
         }
 
-        RecordingDataSet.Recording CreateRecording()
-        {
-            RecordingDataSet dataSet = new RecordingDataSet();
-            RecordingDataSet.Recording recording = dataSet.Recordings.NewRecording();
-            recording.Id = 1;
-            return recording;
-        }
+        //RecordingDataSet.Recording CreateRecording()
+        //{
+        //    RecordingDataSet dataSet = new RecordingDataSet();
+        //    RecordingDataSet.Recording recording = dataSet.Recordings.NewRecording();
+        //    recording.Id = 1;
+        //    recording.Title = "test title";
+        //    return recording;
+        //}
 
         [Test]
         public void CheckId()
         {
-            Assert.AreEqual(recording.Id, actual.Id);
+            Assert.AreEqual(recording.Id, dto.id);
         }
-
-        //[Test]
-        //public void CheckTitle()
-        //{
-        //    Assert.AreEqual(recording.Title, dto.title);
-        //}
 
         [Test]
         public void InvalidId()
         {
-            RecordingDataSet.Recording nullRecording = service.FindByRecordingId(2);
-            Assert.IsNull(nullRecording, "should be null");
+            RecordingDto nullDto = service.FindByRecordingId(2);
+            Assert.IsNull(nullDto, "should be null");
+        }
+
+        [Test]
+        public void CheckTitle()
+        {
+            Assert.AreEqual(recording.Title, dto.title);
         }
 
         //[Test]
