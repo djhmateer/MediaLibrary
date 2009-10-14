@@ -9,7 +9,7 @@ namespace ServiceInterface
         RecordingDataSet.Recording recording;
         // a flattened representation of a recording
         RecordingDto dto;
-        CatalogServiceStub service;
+        StubCatalogService service;
 
         [SetUp]
         public void SetUp()
@@ -18,7 +18,7 @@ namespace ServiceInterface
             //recording = CreateRecording();
             recording = InMemoryRecordingBuilder.Make();
 
-            service = new CatalogServiceStub(recording);
+            service = new StubCatalogService(recording);
             dto = service.FindByRecordingId(recording.Id);
         }
 

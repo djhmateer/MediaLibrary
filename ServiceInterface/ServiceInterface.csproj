@@ -59,7 +59,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CatalogService.cs" />
-    <Compile Include="CatalogServiceStub.cs" />
+    <Compile Include="CatalogServiceInterface.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StubCatalogService.cs" />
+    <Compile Include="DatabaseCatalogService.cs" />
+    <Compile Include="DatabaseCatalogServiceFixture.cs" />
     <Compile Include="InMemoryRecordingBuilder.cs" />
     <Compile Include="RecordingAssembler.cs" />
     <Compile Include="RecordingAssemblerFixture.cs" />
@@ -78,6 +83,10 @@
     <ProjectReference Include="..\MediaLibrary\MediaLibrary.csproj">
       <Project>{0811A30D-08B4-4CA8-87F7-1FE1F6B2F334}</Project>
       <Name>MediaLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tests\Tests.csproj">
+      <Project>{D4EC22F6-AB63-49BB-BBA0-D652D0CC0C94}</Project>
+      <Name>Tests</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
