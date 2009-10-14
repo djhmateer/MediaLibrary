@@ -15,6 +15,7 @@ namespace MediaLibrary
             {
                 //connection = new SqlConnection(ConfigurationSettings.AppSettings.Get("Catalog.Connection"));
                 connection = new SqlConnection("Data Source=DAVEXPLAPTOP;Initial Catalog=catalog;Integrated Security=True");
+                //connection = new SqlConnection("Data Source=DAVEXPLAPTOP;Initial Catalog=catalog;user=dbconnetuser;pwd=letmein");
                 connection.Open();
 
                 RecordingGateway recordingGateway = new RecordingGateway(connection);

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s1="http://nunit.org/webservices" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:import namespace="http://nunit.org/webservices" />
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FindByRecordingId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FindByRecordingIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" ref="s1:Recording" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://nunit.org/webservices">
+      <s:element name="Recording" type="s1:RecordingDto" />
+      <s:complexType name="RecordingDto">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="id" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="title" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="artistName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="releaseDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="labelName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="unbounded" name="tracks" type="s1:TrackDto" />
+          <s:element minOccurs="0" maxOccurs="unbounded" name="reviews" type="s1:ReviewDto" />
+          <s:element minOccurs="0" maxOccurs="1" name="totalRunTime" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="averageRating" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TrackDto">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="id" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="title" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="artistName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="duration" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="genreName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ReviewDto">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="id" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="reviewerName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="rating" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="reviewContent" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="FindByRecordingIdSoapIn">
+    <wsdl:part name="parameters" element="tns:FindByRecordingId" />
+  </wsdl:message>
+  <wsdl:message name="FindByRecordingIdSoapOut">
+    <wsdl:part name="parameters" element="tns:FindByRecordingIdResponse" />
+  </wsdl:message>
+  <wsdl:portType name="CatalogServiceInterfaceSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FindByRecordingId">
+      <wsdl:input message="tns:FindByRecordingIdSoapIn" />
+      <wsdl:output message="tns:FindByRecordingIdSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CatalogServiceInterfaceSoap" type="tns:CatalogServiceInterfaceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindByRecordingId">
+      <soap:operation soapAction="http://tempuri.org/FindByRecordingId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CatalogServiceInterfaceSoap12" type="tns:CatalogServiceInterfaceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindByRecordingId">
+      <soap12:operation soapAction="http://tempuri.org/FindByRecordingId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CatalogServiceInterface">
+    <wsdl:port name="CatalogServiceInterfaceSoap" binding="tns:CatalogServiceInterfaceSoap">
+      <soap:address location="http://localhost/ServiceInterfaceDave/CatalogServiceInterface.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CatalogServiceInterfaceSoap12" binding="tns:CatalogServiceInterfaceSoap12">
+      <soap12:address location="http://localhost/ServiceInterfaceDave/CatalogServiceInterface.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
