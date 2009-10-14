@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "MediaLibrary\DataAccessLayer.csproj", "{0811A30D-08B4-4CA8-87F7-1FE1F6B2F334}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{0811A30D-08B4-4CA8-87F7-1FE1F6B2F334}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayerTests", "Tests\DataAccessLayerTests.csproj", "{D4EC22F6-AB63-49BB-BBA0-D652D0CC0C94}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayerTests", "DataAccessLayerTests\DataAccessLayerTests.csproj", "{D4EC22F6-AB63-49BB-BBA0-D652D0CC0C94}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServiceInterface", "ServiceInterface\WebServiceInterface.csproj", "{93DDB8EE-B533-41DD-AF08-38F65245B753}"
 EndProject

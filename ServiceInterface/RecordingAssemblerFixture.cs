@@ -1,5 +1,5 @@
 using System;
-using MediaLibrary;
+using DataAccessLayer;
 using NUnit.Framework;
 
 namespace ServiceInterface

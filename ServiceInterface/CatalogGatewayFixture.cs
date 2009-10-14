@@ -1,5 +1,5 @@
 using NUnit.Framework;
-using Tests;
+using DataAccessLayerTests;
 
 namespace ServiceInterface
 {

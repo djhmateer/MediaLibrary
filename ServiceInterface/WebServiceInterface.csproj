@@ -89,11 +89,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MediaLibrary\DataAccessLayer.csproj">
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
       <Project>{0811A30D-08B4-4CA8-87F7-1FE1F6B2F334}</Project>
       <Name>DataAccessLayer</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Tests\DataAccessLayerTests.csproj">
+    <ProjectReference Include="..\DataAccessLayerTests\DataAccessLayerTests.csproj">
       <Project>{D4EC22F6-AB63-49BB-BBA0-D652D0CC0C94}</Project>
       <Name>DataAccessLayerTests</Name>
     </ProjectReference>
