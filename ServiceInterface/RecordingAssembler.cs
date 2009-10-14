@@ -2,7 +2,7 @@ using DataAccessLayer;
 
 namespace ServiceInterface
 {
-    public class RecordingAssembler
+    static public class RecordingAssembler
     {
         static public RecordingDto WriteDto(RecordingDataSet.Recording recording)
         {

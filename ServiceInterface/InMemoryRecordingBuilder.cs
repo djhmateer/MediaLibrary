@@ -4,7 +4,7 @@ using DataAccessLayer;
 
 namespace ServiceInterface
 {
-    public class InMemoryRecordingBuilder
+    static public class InMemoryRecordingBuilder
     {
         static public RecordingDataSet.Recording Make()
         {

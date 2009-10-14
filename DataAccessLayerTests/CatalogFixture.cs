@@ -27,7 +27,7 @@ namespace DataAccessLayerTests
         RecordingDataSet.Recording loadedRecording;
 
         [SetUp]
-        public void SetUp()
+        public void SetUp_a_known_recording_then_verify_it_brings_back_the_same_data()
         {
             recordingDataSet = new RecordingDataSet();
 

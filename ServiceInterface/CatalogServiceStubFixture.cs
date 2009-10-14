@@ -15,21 +15,11 @@ namespace ServiceInterface
         public void SetUp()
         {
             // create a test recording in memory
-            //recording = CreateRecording();
             recording = InMemoryRecordingBuilder.Make();
 
             service = new StubCatalogService(recording);
             dto = service.FindByRecordingId(recording.Id);
         }
-
-        //RecordingDataSet.Recording CreateRecording()
-        //{
-        //    RecordingDataSet dataSet = new RecordingDataSet();
-        //    RecordingDataSet.Recording recording = dataSet.Recordings.NewRecording();
-        //    recording.Id = 1;
-        //    recording.Title = "test title";
-        //    return recording;
-        //}
 
         [Test]
         public void CheckId()
@@ -50,18 +40,17 @@ namespace ServiceInterface
             Assert.AreEqual(recording.Title, dto.title);
         }
 
-        //[Test]
-        //public void TrackCount()
-        //{
-        //    Assert.AreEqual(recording.GetTracks().Length,
-        //        dto.tracks.Length);
-        //}
+        [Test]
+        public void TrackCount()
+        {
+            Assert.AreEqual(recording.GetTracks().Length,
+                dto.tracks.Length);
+        }
 
-        //[Test]
-        //public void ReviewCount()
-        //{
-        //    Assert.AreEqual(recording.GetReviews().Length,
-        //        dto.reviews.Length);
-        //}
+        [Test]
+        public void ReviewCount()
+        {
+            Assert.AreEqual(recording.GetReviews().Length, dto.reviews.Length);
+        }
     }
 }
