@@ -64,9 +64,9 @@
     <Compile Include="Relationships\TrackRecordingFixture.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MediaLibrary\MediaLibrary.csproj">
+    <ProjectReference Include="..\MediaLibrary\DataAccessLayer.csproj">
       <Project>{0811A30D-08B4-4CA8-87F7-1FE1F6B2F334}</Project>
-      <Name>MediaLibrary</Name>
+      <Name>DataAccessLayer</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

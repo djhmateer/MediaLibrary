@@ -14,7 +14,6 @@ namespace Tests
         public void setup_the_connection_string()
         {
             connection = new SqlConnection("Data Source=(local);Initial Catalog=catalog;Integrated Security=SSPI");
-            //connection = new SqlConnection("Data Source=DAVEXPLAPTOP;Initial Catalog=catalog;uid=dbconnectuser;pwd=letmein");
         }
 
         [Test]

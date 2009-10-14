@@ -12,7 +12,7 @@ namespace Tests
         long artistId;
 
         [SetUp]
-        public void setup_and_open_Connection_pass_to_gateway_setup_data_set()
+        public void setup_and_open_Connection_pass_to_gateway_setup_the_dataSet()
         {
             recordingDataSet = new RecordingDataSet();
             gateway = new ArtistGateway(Connection);
@@ -21,10 +21,11 @@ namespace Tests
         }
 
         [Test]
-        public void RetrieveArtistFromDatabase()
+        public void RetrieveArtistFromDatabase_testing_FindById()
         {
-            // create new RDS, use same gateway.
+            // create another RecordingDataSet, use same gateway.
             RecordingDataSet loadedFromDB = new RecordingDataSet();
+
             RecordingDataSet.Artist loadedArtist = gateway.FindById(artistId, loadedFromDB);
 
             Assert.AreEqual(artistId, loadedArtist.Id);
@@ -32,7 +33,7 @@ namespace Tests
         }
 
         [Test]
-        public void DeleteArtistFromDatabase()
+        public void DeleteArtistFromDatabase_testing_Delete()
         {
             //long artistId = gateway.Insert(new RecordingDataSet(), artistName);
 
@@ -46,7 +47,7 @@ namespace Tests
         }
 
         [Test]
-        public void UpdateArtistAlreadyInTheDatabase()
+        public void UpdateArtistAlreadyInTheDatabase_testing_Update()
         {
             RecordingDataSet.Artist artist = recordingDataSet.Artists[0];
             artist.Name = "Modified Name";

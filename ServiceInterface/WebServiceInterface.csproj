@@ -65,9 +65,6 @@
       <DependentUpon>CatalogServiceInterface.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="CatalogServiceInterfacexxx.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
@@ -92,13 +89,13 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MediaLibrary\MediaLibrary.csproj">
+    <ProjectReference Include="..\MediaLibrary\DataAccessLayer.csproj">
       <Project>{0811A30D-08B4-4CA8-87F7-1FE1F6B2F334}</Project>
-      <Name>MediaLibrary</Name>
+      <Name>DataAccessLayer</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Tests\Tests.csproj">
+    <ProjectReference Include="..\Tests\DataAccessLayerTests.csproj">
       <Project>{D4EC22F6-AB63-49BB-BBA0-D652D0CC0C94}</Project>
-      <Name>Tests</Name>
+      <Name>DataAccessLayerTests</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -347,6 +347,7 @@ namespace MediaLibrary {
             this.DataSetName = "RecordingDataSet";
             this.Prefix = "";
             this.Namespace = "http://nunit.org/book/RecordingDataSet.xsd";
+            this.Locale = new global::System.Globalization.CultureInfo("en-US");
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableArtists = new ArtistsDataTable();
@@ -501,7 +502,7 @@ namespace MediaLibrary {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0")]
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class ArtistsDataTable : global::System.Data.DataTable, global::System.Collections.IEnumerable {
+        public partial class ArtistsDataTable : global::System.Data.TypedTableBase<Artist> {
             
             private global::System.Data.DataColumn columnId;
             
@@ -594,11 +595,6 @@ namespace MediaLibrary {
             public Artist FindById(long Id) {
                 return ((Artist)(this.Rows.Find(new object[] {
                             Id})));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public virtual global::System.Collections.IEnumerator GetEnumerator() {
-                return this.Rows.GetEnumerator();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -757,7 +753,7 @@ namespace MediaLibrary {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0")]
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class GenresDataTable : global::System.Data.DataTable, global::System.Collections.IEnumerable {
+        public partial class GenresDataTable : global::System.Data.TypedTableBase<Genre> {
             
             private global::System.Data.DataColumn columnId;
             
@@ -850,11 +846,6 @@ namespace MediaLibrary {
             public Genre FindById(long Id) {
                 return ((Genre)(this.Rows.Find(new object[] {
                             Id})));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public virtual global::System.Collections.IEnumerator GetEnumerator() {
-                return this.Rows.GetEnumerator();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1013,7 +1004,7 @@ namespace MediaLibrary {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0")]
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class LabelsDataTable : global::System.Data.DataTable, global::System.Collections.IEnumerable {
+        public partial class LabelsDataTable : global::System.Data.TypedTableBase<Label> {
             
             private global::System.Data.DataColumn columnId;
             
@@ -1106,11 +1097,6 @@ namespace MediaLibrary {
             public Label FindById(long Id) {
                 return ((Label)(this.Rows.Find(new object[] {
                             Id})));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public virtual global::System.Collections.IEnumerator GetEnumerator() {
-                return this.Rows.GetEnumerator();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1269,7 +1255,7 @@ namespace MediaLibrary {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0")]
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class RecordingsDataTable : global::System.Data.DataTable, global::System.Collections.IEnumerable {
+        public partial class RecordingsDataTable : global::System.Data.TypedTableBase<Recording> {
             
             private global::System.Data.DataColumn columnId;
             
@@ -1398,11 +1384,6 @@ namespace MediaLibrary {
             public Recording FindById(long Id) {
                 return ((Recording)(this.Rows.Find(new object[] {
                             Id})));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public virtual global::System.Collections.IEnumerator GetEnumerator() {
-                return this.Rows.GetEnumerator();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1576,7 +1557,7 @@ namespace MediaLibrary {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0")]
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class ReviewsDataTable : global::System.Data.DataTable, global::System.Collections.IEnumerable {
+        public partial class ReviewsDataTable : global::System.Data.TypedTableBase<Review> {
             
             private global::System.Data.DataColumn columnId;
             
@@ -1705,11 +1686,6 @@ namespace MediaLibrary {
             public Review FindById(long Id) {
                 return ((Review)(this.Rows.Find(new object[] {
                             Id})));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public virtual global::System.Collections.IEnumerator GetEnumerator() {
-                return this.Rows.GetEnumerator();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1880,7 +1856,7 @@ namespace MediaLibrary {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0")]
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class ReviewersDataTable : global::System.Data.DataTable, global::System.Collections.IEnumerable {
+        public partial class ReviewersDataTable : global::System.Data.TypedTableBase<Reviewer> {
             
             private global::System.Data.DataColumn columnId;
             
@@ -1973,11 +1949,6 @@ namespace MediaLibrary {
             public Reviewer FindById(long Id) {
                 return ((Reviewer)(this.Rows.Find(new object[] {
                             Id})));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public virtual global::System.Collections.IEnumerator GetEnumerator() {
-                return this.Rows.GetEnumerator();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2136,7 +2107,7 @@ namespace MediaLibrary {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0")]
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class TracksDataTable : global::System.Data.DataTable, global::System.Collections.IEnumerable {
+        public partial class TracksDataTable : global::System.Data.TypedTableBase<Track> {
             
             private global::System.Data.DataColumn columnId;
             
@@ -2278,11 +2249,6 @@ namespace MediaLibrary {
             public Track FindById(long Id) {
                 return ((Track)(this.Rows.Find(new object[] {
                             Id})));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public virtual global::System.Collections.IEnumerator GetEnumerator() {
-                return this.Rows.GetEnumerator();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

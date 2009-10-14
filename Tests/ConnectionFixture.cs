@@ -1,5 +1,4 @@
-﻿using System.Configuration;
-using System.Data.SqlClient;
+﻿using System.Data.SqlClient;
 using NUnit.Framework;
 
 namespace Tests
@@ -18,8 +17,7 @@ namespace Tests
         {
             //connection = new SqlConnection(ConfigurationSettings.AppSettings.Get("Catalog.Connection"));
             connection = new SqlConnection("Data Source=DAVEXPLAPTOP;Initial Catalog=catalog;Integrated Security=True");
-            //connection = new SqlConnection("Data Source=DAVEXPLAPTOP;Initial Catalog=catalog;uid=dbconnectuser;pwd=letmein");
-            
+
             connection.Open();
         }
 
