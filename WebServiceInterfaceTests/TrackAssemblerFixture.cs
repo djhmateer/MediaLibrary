@@ -1,4 +1,4 @@
-using DataAccessLayer;
+using DataModel;
 using NUnit.Framework;
 
 namespace ServiceInterface
@@ -6,10 +6,10 @@ namespace ServiceInterface
     [TestFixture]
     public class TrackAssemblerFixture
     {
-        private RecordingDataSet.Artist artist;
-        private RecordingDataSet.Genre genre;
-        private RecordingDataSet.Track track;
-        private TrackDto trackDto;
+        RecordingDataSet.Artist artist;
+        RecordingDataSet.Genre genre;
+        RecordingDataSet.Track track;
+        TrackDto trackDto;
 
         [SetUp]
         public void SetUp()
@@ -67,6 +67,4 @@ namespace ServiceInterface
             Assert.AreEqual(artist.Name, trackDto.artistName);
         }
     }
-
-        
 }

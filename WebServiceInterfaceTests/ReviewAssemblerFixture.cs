@@ -1,4 +1,5 @@
 using DataAccessLayer;
+using DataModel;
 using ServiceInterface;
 using NUnit.Framework;
 

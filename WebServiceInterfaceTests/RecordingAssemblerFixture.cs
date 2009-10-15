@@ -1,5 +1,6 @@
 using System;
 using DataAccessLayer;
+using DataModel;
 using NUnit.Framework;
 
 namespace ServiceInterface

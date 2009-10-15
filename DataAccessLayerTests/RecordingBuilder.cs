@@ -1,6 +1,7 @@
 using System;
 using System.Data.SqlClient;
 using DataAccessLayer;
+using DataModel;
 
 namespace DataAccessLayerTests
 {

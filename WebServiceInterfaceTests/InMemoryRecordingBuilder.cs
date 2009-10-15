@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using DataAccessLayer;
+using DataModel;
 
 namespace ServiceInterface
 {

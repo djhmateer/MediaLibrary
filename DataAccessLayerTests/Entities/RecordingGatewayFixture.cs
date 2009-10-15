@@ -1,4 +1,5 @@
 using System;
+using DataModel;
 using NUnit.Framework;
 using DataAccessLayer;
 

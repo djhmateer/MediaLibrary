@@ -90,6 +90,10 @@
       <Project>{D4EC22F6-AB63-49BB-BBA0-D652D0CC0C94}</Project>
       <Name>DataAccessLayerTests</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DataModel\DataModel.csproj">
+      <Project>{BF02ACD2-9421-4C57-A472-5D9481F427C7}</Project>
+      <Name>DataModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\Settings.settings">

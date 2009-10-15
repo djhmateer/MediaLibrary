@@ -65,6 +65,10 @@
       <Project>{0811A30D-08B4-4CA8-87F7-1FE1F6B2F334}</Project>
       <Name>DataAccessLayer</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DataModel\DataModel.csproj">
+      <Project>{BF02ACD2-9421-4C57-A472-5D9481F427C7}</Project>
+      <Name>DataModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

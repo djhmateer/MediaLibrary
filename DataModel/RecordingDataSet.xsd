@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="RecordingDataSet" targetNamespace="http://nunit.org/book/RecordingDataSet.xsd" xmlns:mstns="http://nunit.org/book/RecordingDataSet.xsd" xmlns="http://nunit.org/book/RecordingDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="catalogConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="catalogConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.DataModel.Properties.Settings.GlobalReference.Default.catalogConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="RecordingDataSet" msdata:IsDataSet="true" msdata:Locale="en-US" msprop:Generator_UserDSName="RecordingDataSet" msprop:Generator_DataSetName="RecordingDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Artist" msprop:Generator_UserTableName="Artist" msprop:Generator_RowDeletedName="ArtistDeleted" msprop:typedName="Artist" msprop:Generator_RowChangedName="ArtistChanged" msprop:Generator_RowClassName="Artist" msprop:Generator_RowChangingName="ArtistChanging" msprop:typedPlural="Artists" msprop:Generator_RowEvArgName="ArtistChangeEvent" msprop:Generator_RowEvHandlerName="ArtistChangeEventHandler" msprop:Generator_TableClassName="ArtistsDataTable" msprop:Generator_TableVarName="tableArtists" msprop:Generator_RowDeletingName="ArtistDeleting" msprop:Generator_TablePropName="Artists">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msprop:Generator_UserColumnName="id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:typedName="Id" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" type="xs:long" />
+              <xs:element name="name" msprop:Generator_UserColumnName="name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:typedName="Name" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Genre" msprop:Generator_UserTableName="Genre" msprop:Generator_RowDeletedName="GenreDeleted" msprop:typedName="Genre" msprop:Generator_RowChangedName="GenreChanged" msprop:Generator_RowClassName="Genre" msprop:Generator_RowChangingName="GenreChanging" msprop:typedPlural="Genres" msprop:Generator_RowEvArgName="GenreChangeEvent" msprop:Generator_RowEvHandlerName="GenreChangeEventHandler" msprop:Generator_TableClassName="GenresDataTable" msprop:Generator_TableVarName="tableGenres" msprop:Generator_RowDeletingName="GenreDeleting" msprop:Generator_TablePropName="Genres">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msprop:Generator_UserColumnName="id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:typedName="Id" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" type="xs:long" />
+              <xs:element name="name" msprop:Generator_UserColumnName="name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:typedName="Name" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Label" msprop:Generator_UserTableName="Label" msprop:Generator_RowDeletedName="LabelDeleted" msprop:typedName="Label" msprop:Generator_RowChangedName="LabelChanged" msprop:Generator_RowClassName="Label" msprop:Generator_RowChangingName="LabelChanging" msprop:typedPlural="Labels" msprop:Generator_RowEvArgName="LabelChangeEvent" msprop:Generator_RowEvHandlerName="LabelChangeEventHandler" msprop:Generator_TableClassName="LabelsDataTable" msprop:Generator_TableVarName="tableLabels" msprop:Generator_RowDeletingName="LabelDeleting" msprop:Generator_TablePropName="Labels">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msprop:Generator_UserColumnName="id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:typedName="Id" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" type="xs:long" />
+              <xs:element name="name" msprop:Generator_UserColumnName="name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:typedName="Name" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Recording" msprop:Generator_UserTableName="Recording" msprop:Generator_RowDeletedName="RecordingDeleted" msprop:typedName="Recording" msprop:Generator_RowChangedName="RecordingChanged" msprop:Generator_RowClassName="Recording" msprop:Generator_RowChangingName="RecordingChanging" msprop:typedPlural="Recordings" msprop:Generator_RowEvArgName="RecordingChangeEvent" msprop:Generator_RowEvHandlerName="RecordingChangeEventHandler" msprop:Generator_TableClassName="RecordingsDataTable" msprop:Generator_TableVarName="tableRecordings" msprop:Generator_RowDeletingName="RecordingDeleting" msprop:Generator_TablePropName="Recordings">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msprop:Generator_UserColumnName="id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:typedName="Id" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" type="xs:long" />
+              <xs:element name="title" msprop:Generator_UserColumnName="title" msprop:Generator_ColumnVarNameInTable="columnTitle" msprop:typedName="Title" msprop:Generator_ColumnPropNameInRow="Title" msprop:Generator_ColumnPropNameInTable="TitleColumn" type="xs:string" />
+              <xs:element name="releasedate" msprop:Generator_UserColumnName="releasedate" msprop:Generator_ColumnVarNameInTable="columnReleaseDate" msprop:typedName="ReleaseDate" msprop:Generator_ColumnPropNameInRow="ReleaseDate" msprop:Generator_ColumnPropNameInTable="ReleaseDateColumn" type="xs:dateTime" />
+              <xs:element name="labelid" msprop:Generator_UserColumnName="labelid" msprop:Generator_ColumnVarNameInTable="columnLabelId" msprop:typedName="LabelId" msprop:Generator_ColumnPropNameInRow="LabelId" msprop:Generator_ColumnPropNameInTable="LabelIdColumn" type="xs:long" />
+              <xs:element name="artistid" msprop:Generator_UserColumnName="artistid" msprop:Generator_ColumnVarNameInTable="columnArtistId" msprop:typedName="ArtistId" msprop:Generator_ColumnPropNameInRow="ArtistId" msprop:Generator_ColumnPropNameInTable="ArtistIdColumn" type="xs:long" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Review" msprop:Generator_UserTableName="Review" msprop:Generator_RowDeletedName="ReviewDeleted" msprop:typedName="Review" msprop:Generator_RowChangedName="ReviewChanged" msprop:Generator_RowClassName="Review" msprop:Generator_RowChangingName="ReviewChanging" msprop:typedPlural="Reviews" msprop:Generator_RowEvArgName="ReviewChangeEvent" msprop:Generator_RowEvHandlerName="ReviewChangeEventHandler" msprop:Generator_TableClassName="ReviewsDataTable" msprop:Generator_TableVarName="tableReviews" msprop:Generator_RowDeletingName="ReviewDeleting" msprop:Generator_TablePropName="Reviews">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msprop:Generator_UserColumnName="id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:typedName="Id" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" type="xs:long" />
+              <xs:element name="reviewerid" msprop:Generator_UserColumnName="reviewerid" msprop:Generator_ColumnVarNameInTable="columnReviewerId" msprop:typedName="ReviewerId" msprop:Generator_ColumnPropNameInRow="ReviewerId" msprop:Generator_ColumnPropNameInTable="ReviewerIdColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="recordingid" msprop:Generator_UserColumnName="recordingid" msprop:Generator_ColumnVarNameInTable="columnRecordingId" msprop:typedName="RecordingId" msprop:Generator_ColumnPropNameInRow="RecordingId" msprop:Generator_ColumnPropNameInTable="RecordingIdColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="rating" msprop:Generator_UserColumnName="rating" msprop:Generator_ColumnVarNameInTable="columnRating" msprop:typedName="Rating" msprop:Generator_ColumnPropNameInRow="Rating" msprop:Generator_ColumnPropNameInTable="RatingColumn" type="xs:int" />
+              <xs:element name="review" msprop:Generator_UserColumnName="review" msprop:Generator_ColumnVarNameInTable="columnContent" msprop:typedName="Content" msprop:Generator_ColumnPropNameInRow="Content" msprop:Generator_ColumnPropNameInTable="ContentColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Reviewer" msprop:Generator_UserTableName="Reviewer" msprop:Generator_RowDeletedName="ReviewerDeleted" msprop:typedName="Reviewer" msprop:Generator_RowChangedName="ReviewerChanged" msprop:Generator_RowClassName="Reviewer" msprop:Generator_RowChangingName="ReviewerChanging" msprop:typedPlural="Reviewers" msprop:Generator_RowEvArgName="ReviewerChangeEvent" msprop:Generator_RowEvHandlerName="ReviewerChangeEventHandler" msprop:Generator_TableClassName="ReviewersDataTable" msprop:Generator_TableVarName="tableReviewers" msprop:Generator_RowDeletingName="ReviewerDeleting" msprop:Generator_TablePropName="Reviewers">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msprop:Generator_UserColumnName="id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:typedName="Id" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" type="xs:long" />
+              <xs:element name="name" msprop:Generator_UserColumnName="name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:typedName="Name" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Track" msprop:Generator_UserTableName="Track" msprop:Generator_RowDeletedName="TrackDeleted" msprop:typedName="Track" msprop:Generator_RowChangedName="TrackChanged" msprop:Generator_RowClassName="Track" msprop:Generator_RowChangingName="TrackChanging" msprop:typedPlural="Tracks" msprop:Generator_RowEvArgName="TrackChangeEvent" msprop:Generator_RowEvHandlerName="TrackChangeEventHandler" msprop:Generator_TableClassName="TracksDataTable" msprop:Generator_TableVarName="tableTracks" msprop:Generator_RowDeletingName="TrackDeleting" msprop:Generator_TablePropName="Tracks">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msprop:Generator_UserColumnName="id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:typedName="Id" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" type="xs:long" />
+              <xs:element name="title" msprop:Generator_UserColumnName="title" msprop:Generator_ColumnVarNameInTable="columnTitle" msprop:typedName="Title" msprop:Generator_ColumnPropNameInRow="Title" msprop:Generator_ColumnPropNameInTable="TitleColumn" type="xs:string" />
+              <xs:element name="duration" msprop:Generator_UserColumnName="duration" msprop:Generator_ColumnVarNameInTable="columnDuration" msprop:typedName="Duration" msprop:Generator_ColumnPropNameInRow="Duration" msprop:Generator_ColumnPropNameInTable="DurationColumn" type="xs:int" />
+              <xs:element name="genreid" msprop:Generator_UserColumnName="genreid" msprop:Generator_ColumnVarNameInTable="columnGenreId" msprop:typedName="GenreId" msprop:Generator_ColumnPropNameInRow="GenreId" msprop:Generator_ColumnPropNameInTable="GenreIdColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="artistid" msprop:Generator_UserColumnName="artistid" msprop:Generator_ColumnVarNameInTable="columnArtistId" msprop:typedName="ArtistId" msprop:Generator_ColumnPropNameInRow="ArtistId" msprop:Generator_ColumnPropNameInTable="ArtistIdColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="recordingid" msprop:Generator_UserColumnName="recordingid" msprop:Generator_ColumnVarNameInTable="columnRecordingId" msprop:typedName="RecordingId" msprop:Generator_ColumnPropNameInRow="RecordingId" msprop:Generator_ColumnPropNameInTable="RecordingIdColumn" type="xs:long" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="ArtistPK" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Artist" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+    <xs:unique name="GenrePK" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Genre" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+    <xs:unique name="LabelPK" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Label" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+    <xs:unique name="RecordingPK" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Recording" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+    <xs:unique name="ReviewPK" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Review" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+    <xs:unique name="ReviewerPK" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Reviewer" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+    <xs:unique name="TrackPK" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Track" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="TrackOfTheRecording" msdata:parent="Recording" msdata:child="Track" msdata:parentkey="id" msdata:childkey="recordingid" msprop:Generator_UserRelationName="TrackOfTheRecording" msprop:Generator_RelationVarName="relationTrackOfTheRecording" msprop:Generator_UserChildTable="Track" msprop:Generator_UserParentTable="Recording" msprop:Generator_ParentPropName="Recording" msprop:Generator_ChildPropName="GetTracks" />
+      <msdata:Relationship name="GenreOfTheTrack" msdata:parent="Genre" msdata:child="Track" msdata:parentkey="id" msdata:childkey="genreid" msprop:Generator_UserRelationName="GenreOfTheTrack" msprop:Generator_RelationVarName="relationGenreOfTheTrack" msprop:Generator_UserChildTable="Track" msprop:Generator_UserParentTable="Genre" msprop:Generator_ParentPropName="Genre" msprop:Generator_ChildPropName="GetTracks" />
+      <msdata:Relationship name="ArtistOfTheTrack" msdata:parent="Artist" msdata:child="Track" msdata:parentkey="id" msdata:childkey="artistid" msprop:Generator_UserRelationName="ArtistOfTheTrack" msprop:Generator_RelationVarName="relationArtistOfTheTrack" msprop:Generator_UserChildTable="Track" msprop:Generator_UserParentTable="Artist" msprop:Generator_ParentPropName="Artist" msprop:Generator_ChildPropName="GetTracks" />
+      <msdata:Relationship name="ArtistOfTheRecording" msdata:parent="Artist" msdata:child="Recording" msdata:parentkey="id" msdata:childkey="artistid" msprop:Generator_UserRelationName="ArtistOfTheRecording" msprop:Generator_RelationVarName="relationArtistOfTheRecording" msprop:Generator_UserChildTable="Recording" msprop:Generator_UserParentTable="Artist" msprop:Generator_ParentPropName="Artist" msprop:Generator_ChildPropName="GetRecordings" />
+      <msdata:Relationship name="LabelOfTheRecording" msdata:parent="Label" msdata:child="Recording" msdata:parentkey="id" msdata:childkey="labelid" msprop:Generator_UserRelationName="LabelOfTheRecording" msprop:Generator_RelationVarName="relationLabelOfTheRecording" msprop:Generator_UserChildTable="Recording" msprop:Generator_UserParentTable="Label" msprop:Generator_ParentPropName="Label" msprop:Generator_ChildPropName="GetRecordings" />
+      <msdata:Relationship name="ReviewerOfTheRecording" msdata:parent="Reviewer" msdata:child="Review" msdata:parentkey="id" msdata:childkey="reviewerid" msprop:Generator_UserRelationName="ReviewerOfTheRecording" msprop:Generator_RelationVarName="relationReviewerOfTheRecording" msprop:Generator_UserChildTable="Review" msprop:Generator_UserParentTable="Reviewer" msprop:Generator_ParentPropName="Reviewer" msprop:Generator_ChildPropName="GetReviews" />
+      <msdata:Relationship name="ReviewsOfTheRecording" msdata:parent="Recording" msdata:child="Review" msdata:parentkey="id" msdata:childkey="recordingid" msprop:Generator_UserRelationName="ReviewsOfTheRecording" msprop:Generator_RelationVarName="relationReviewsOfTheRecording" msprop:Generator_UserChildTable="Review" msprop:Generator_UserParentTable="Recording" msprop:Generator_ParentPropName="Recording" msprop:Generator_ChildPropName="GetReviews" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>
