@@ -2,7 +2,7 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ServiceInterface.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="ServiceInterface_ServiceInterfaceDave_CatalogServiceInterface" Type="(Web Service URL)" Scope="Application">
+    <Setting Name="ServiceInterface_ServiceGateway_CatalogGateway" Type="(Web Service URL)" Scope="Application">
       <Value Profile="(Default)">http://localhost/ServiceInterfaceDave/CatalogServiceInterface.asmx</Value>
     </Setting>
   </Settings>

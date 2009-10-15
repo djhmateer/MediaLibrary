@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s1="http://nunit.org/webservices" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://nunit.org/services" xmlns:s1="http://nunit.org/webservices" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://nunit.org/services" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
   <wsdl:types>
-    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+    <s:schema elementFormDefault="qualified" targetNamespace="http://nunit.org/services">
       <s:import namespace="http://nunit.org/webservices" />
-      <s:element name="HelloWorld">
-        <s:complexType />
-      </s:element>
-      <s:element name="HelloWorldResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
       <s:element name="FindByRecordingId">
         <s:complexType>
           <s:sequence>
@@ -62,41 +52,22 @@
       </s:complexType>
     </s:schema>
   </wsdl:types>
-  <wsdl:message name="HelloWorldSoapIn">
-    <wsdl:part name="parameters" element="tns:HelloWorld" />
-  </wsdl:message>
-  <wsdl:message name="HelloWorldSoapOut">
-    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
-  </wsdl:message>
   <wsdl:message name="FindByRecordingIdSoapIn">
     <wsdl:part name="parameters" element="tns:FindByRecordingId" />
   </wsdl:message>
   <wsdl:message name="FindByRecordingIdSoapOut">
     <wsdl:part name="parameters" element="tns:FindByRecordingIdResponse" />
   </wsdl:message>
-  <wsdl:portType name="CatalogServiceInterfaceSoap">
-    <wsdl:operation name="HelloWorld">
-      <wsdl:input message="tns:HelloWorldSoapIn" />
-      <wsdl:output message="tns:HelloWorldSoapOut" />
-    </wsdl:operation>
+  <wsdl:portType name="CatalogGatewaySoap">
     <wsdl:operation name="FindByRecordingId">
       <wsdl:input message="tns:FindByRecordingIdSoapIn" />
       <wsdl:output message="tns:FindByRecordingIdSoapOut" />
     </wsdl:operation>
   </wsdl:portType>
-  <wsdl:binding name="CatalogServiceInterfaceSoap" type="tns:CatalogServiceInterfaceSoap">
+  <wsdl:binding name="CatalogGatewaySoap" type="tns:CatalogGatewaySoap">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <wsdl:operation name="HelloWorld">
-      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
     <wsdl:operation name="FindByRecordingId">
-      <soap:operation soapAction="http://tempuri.org/FindByRecordingId" style="document" />
+      <soap:operation soapAction="http://nunit.org/services/FindByRecordingId" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -105,19 +76,10 @@
       </wsdl:output>
     </wsdl:operation>
   </wsdl:binding>
-  <wsdl:binding name="CatalogServiceInterfaceSoap12" type="tns:CatalogServiceInterfaceSoap">
+  <wsdl:binding name="CatalogGatewaySoap12" type="tns:CatalogGatewaySoap">
     <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <wsdl:operation name="HelloWorld">
-      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
     <wsdl:operation name="FindByRecordingId">
-      <soap12:operation soapAction="http://tempuri.org/FindByRecordingId" style="document" />
+      <soap12:operation soapAction="http://nunit.org/services/FindByRecordingId" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -126,11 +88,11 @@
       </wsdl:output>
     </wsdl:operation>
   </wsdl:binding>
-  <wsdl:service name="CatalogServiceInterface">
-    <wsdl:port name="CatalogServiceInterfaceSoap" binding="tns:CatalogServiceInterfaceSoap">
+  <wsdl:service name="CatalogGateway">
+    <wsdl:port name="CatalogGatewaySoap" binding="tns:CatalogGatewaySoap">
       <soap:address location="http://localhost/ServiceInterfaceDave/CatalogServiceInterface.asmx" />
     </wsdl:port>
-    <wsdl:port name="CatalogServiceInterfaceSoap12" binding="tns:CatalogServiceInterfaceSoap12">
+    <wsdl:port name="CatalogGatewaySoap12" binding="tns:CatalogGatewaySoap12">
       <soap12:address location="http://localhost/ServiceInterfaceDave/CatalogServiceInterface.asmx" />
     </wsdl:port>
   </wsdl:service>

@@ -55,11 +55,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CatalogServiceInterface.asmx" />
-    <None Include="Web References\ServiceInterfaceDave\CatalogServiceInterface.disco" />
+    <None Include="Web References\ServiceGateway\CatalogServiceInterface.disco" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CatalogGatewayFixture.cs" />
     <Compile Include="CatalogService.cs" />
     <Compile Include="CatalogServiceInterface.asmx.cs">
       <DependentUpon>CatalogServiceInterface.asmx</DependentUpon>
@@ -70,19 +69,13 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="StubCatalogService.cs" />
     <Compile Include="DatabaseCatalogService.cs" />
-    <Compile Include="DatabaseCatalogServiceFixture.cs" />
-    <Compile Include="InMemoryRecordingBuilder.cs" />
     <Compile Include="RecordingAssembler.cs" />
-    <Compile Include="RecordingAssemblerFixture.cs" />
     <Compile Include="RecordingDto.cs">
       <DependentUpon>RecordingDto.xsd</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="CatalogServiceStubFixture.cs" />
-    <Compile Include="TrackAssemblerFixture.cs" />
-    <Compile Include="Web References\ServiceInterfaceDave\Reference.cs">
+    <Compile Include="Web References\ServiceGateway\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
@@ -104,11 +97,11 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <None Include="RecordingDto.xsd" />
-    <None Include="Web References\ServiceInterfaceDave\CatalogServiceInterface.wsdl" />
-    <None Include="Web References\ServiceInterfaceDave\RecordingDto.datasource">
+    <None Include="Web References\ServiceGateway\CatalogServiceInterface.wsdl" />
+    <None Include="Web References\ServiceGateway\RecordingDto.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>
-    <None Include="Web References\ServiceInterfaceDave\Reference.map">
+    <None Include="Web References\ServiceGateway\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -119,14 +112,14 @@
   <ItemGroup>
     <WebReferenceUrl Include="http://localhost/ServiceInterfaceDave/CatalogServiceInterface.asmx">
       <UrlBehavior>Dynamic</UrlBehavior>
-      <RelPath>Web References\ServiceInterfaceDave\</RelPath>
+      <RelPath>Web References\ServiceGateway\</RelPath>
       <UpdateFromURL>http://localhost/ServiceInterfaceDave/CatalogServiceInterface.asmx</UpdateFromURL>
       <ServiceLocationURL>
       </ServiceLocationURL>
       <CachedDynamicPropName>
       </CachedDynamicPropName>
       <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
-      <CachedSettingsPropName>ServiceInterface_ServiceInterfaceDave_CatalogServiceInterface</CachedSettingsPropName>
+      <CachedSettingsPropName>ServiceInterface_ServiceGateway_CatalogGateway</CachedSettingsPropName>
     </WebReferenceUrl>
   </ItemGroup>
   <ItemGroup>
