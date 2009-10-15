@@ -70,9 +70,9 @@
       <Project>{BF02ACD2-9421-4C57-A472-5D9481F427C7}</Project>
       <Name>DataModel</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ServiceInterface\WebServiceInterface.csproj">
+    <ProjectReference Include="..\ServiceInterface\ServiceInterface.csproj">
       <Project>{93DDB8EE-B533-41DD-AF08-38F65245B753}</Project>
-      <Name>WebServiceInterface</Name>
+      <Name>ServiceInterface</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

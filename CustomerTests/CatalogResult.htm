@@ -1,0 +1,370 @@
+﻿<html>
+	<head>
+		<title>Sample Recording Script</title></head>
+	<body vLink="#806040" link="#d06040" bgColor="#ffffff">
+		<table cellSpacing="0" cellPadding="0" width="600">
+			<tr>
+				<td vAlign="top" align="center" width="90">&nbsp;
+				</td>
+				<td vAlign="middle" width="528">
+					<h1>Bruce Springsteen, The Rising</h1>
+				</td>
+			</tr>
+			<tr>
+				<td vAlign="top" align="center">&nbsp;
+				</td>
+				<td>
+					<P><wiki>In this test we are verifying that we can retrieve the recording "The 
+						Rising" by Bruce Sprinsteen.&nbsp; This first test just verifies that we can 
+						find the specified recording using it's ID..
+					</P>
+					<P>
+						<TABLE id="Table1" height="106" cellSpacing="0" cellPadding="3" border="1">
+							<TR>
+								<TD colSpan="3" height="21">fit.<A href="wiki.cgi?ActionFixture">ActionFixture</A>
+								</TD>
+							</TR>
+							<TR>
+								<TD height="21">start
+								</TD>
+								<TD height="21">CustomerTests.CatalogAdapter
+								</TD>
+								<TD height="21">&nbsp;</TD>
+							</TR>
+							<TR>
+								<TD height="19">enter
+								</TD>
+								<TD height="19">FindByRecordingId
+								</TD>
+								<TD height="19">4
+								</TD>
+							</TR>
+							<TR>
+								<TD height="21">check
+								</TD>
+								<TD height="21">Found
+								</TD>
+								<TD height="21" bgcolor="#cfffcf">True
+								</TD>
+							</TR>
+						</TABLE>
+					</P>
+					<P>
+					<P>Once we know we can retrieve the recording it is time to look at the attributes 
+						of the recording. For example, we verify that the title of the recording is 
+						"The Rising" and the artist is "Bruce Springsteen".&nbsp;
+					</P>
+					<P>
+						<TABLE id="Table2" cellSpacing="0" cellPadding="3" border="1">
+							<TR>
+								<TD colSpan="3">fit.<A href="wiki.cgi?ActionFixture">ActionFixture</A>
+								</TD>
+							</TR>
+							<TR>
+								<TD>start</TD>
+								<TD>CustomerTests.CatalogAdapter</TD>
+								<TD></TD>
+							</TR>
+							<TR>
+								<TD>enter
+								</TD>
+								<TD>FindByRecordingId
+								</TD>
+								<TD>4</TD>
+							</TR>
+							<TR>
+								<TD>check
+								</TD>
+								<TD>Title
+								</TD>
+								<TD bgcolor="#cfffcf">The Rising</TD>
+							</TR>
+							<TR>
+								<TD>check
+								</TD>
+								<TD>ArtistName</TD>
+								<TD bgcolor="#cfffcf">Bruce Springsteen</TD>
+							</TR>
+							<TR>
+								<TD>check
+								</TD>
+								<TD>ReleaseDate</TD>
+								<TD bgcolor="#cfffcf">7/30/2002</TD>
+							</TR>
+							<TR>
+								<TD>check
+								</TD>
+								<TD>LabelName</TD>
+								<TD bgcolor="#cfffcf">Sony</TD>
+							</TR>
+							<TR>
+								<TD>check
+								</TD>
+								<TD>Duration</TD>
+								<TD bgcolor="#cfffcf">72:51</TD>
+							</TR>
+						</TABLE>
+					</P>
+					<P>Once the attributes of the recording are verified successfully we can move on to 
+						the tracks that should be associated with recording and their specific 
+						attributes.</P>
+					<P>
+						<TABLE id="Table3" cellSpacing="0" cellPadding="3" width="521" border="1">
+							<TR>
+								<TD width="508" colSpan="4">CustomerTests.TrackDisplay
+								</TD>
+							</TR>
+							<TR>
+								<TD width="100">Title()
+								</TD>
+								<TD width="98">ArtistName()
+								</TD>
+								<TD width="70">GenreName()
+								</TD>
+								<TD width="38">Duration()</TD>
+							</TR>
+							<TR>
+								<TD width="100" bgcolor="#cfffcf">Lonesome Day</TD>
+								<TD width="98" bgcolor="#cfffcf">Bruce Springsteen</TD>
+								<TD width="70" bgcolor="#cfffcf">Rock&nbsp;</TD>
+								<TD width="38" bgcolor="#cfffcf">4:08</TD>
+							</TR>
+							<TR>
+								<TD width="100" bgcolor="#cfffcf">Into The Fire</TD>
+								<TD width="98" bgcolor="#cfffcf">Bruce Springsteen</TD>
+								<TD width="70" bgcolor="#cfffcf">Rock</TD>
+								<TD width="38" bgcolor="#cfffcf">5:04</TD>
+							</TR>
+							<TR>
+								<TD width="100" height="44" bgcolor="#cfffcf">Waitin' On A Sunny Day</TD>
+								<TD width="98" height="44" bgcolor="#cfffcf">Bruce Springsteen</TD>
+								<TD width="70" height="44" bgcolor="#cfffcf">Rock</TD>
+								<TD width="38" height="44" bgcolor="#cfffcf">4:18</TD>
+							</TR>
+							<TR>
+								<TD width="100" bgcolor="#cfffcf">The Nothing Man</TD>
+								<TD width="98" bgcolor="#cfffcf">Bruce Springsteen</TD>
+								<TD width="70" bgcolor="#cfffcf">Rock</TD>
+								<TD width="38" bgcolor="#cfffcf">4:23</TD>
+							</TR>
+							<TR>
+								<TD width="100" bgcolor="#cfffcf">Let's Be Friends</TD>
+								<TD width="98" bgcolor="#cfffcf">Bruce Springsteen</TD>
+								<TD width="70" bgcolor="#cfffcf">Rock</TD>
+								<TD width="38" bgcolor="#cfffcf">4:21</TD>
+							</TR>
+							<TR>
+								<TD width="100" bgcolor="#cfffcf">The Fuse</TD>
+								<TD width="98" bgcolor="#cfffcf">Bruce Springsteen</TD>
+								<TD width="70" bgcolor="#cfffcf">Rock</TD>
+								<TD width="38" bgcolor="#cfffcf">5:37</TD>
+							</TR>
+							<TR>
+								<TD width="100" bgcolor="#cfffcf">Further On (Up The Road)</TD>
+								<TD width="98" bgcolor="#cfffcf">Bruce Springsteen</TD>
+								<TD width="70" bgcolor="#cfffcf">Rock</TD>
+								<TD width="38" bgcolor="#cfffcf">3:52</TD>
+							</TR>
+							<TR>
+								<TD width="100" bgcolor="#cfffcf">Mary's Place</TD>
+								<TD width="98" bgcolor="#cfffcf">Bruce Springsteen</TD>
+								<TD width="70" bgcolor="#cfffcf">Rock</TD>
+								<TD width="38" bgcolor="#cfffcf">6:03</TD>
+							</TR>
+							<TR>
+								<TD width="100" bgcolor="#cfffcf">The Rising</TD>
+								<TD width="98" bgcolor="#cfffcf">Bruce Springsteen</TD>
+								<TD width="70" bgcolor="#cfffcf">Rock</TD>
+								<TD width="38" bgcolor="#cfffcf">4:50</TD>
+							</TR>
+							<TR>
+								<TD width="100" bgcolor="#cfffcf">My City Of Ruins</TD>
+								<TD width="98" bgcolor="#cfffcf">Bruce Springsteen</TD>
+								<TD width="70" bgcolor="#cfffcf">Rock</TD>
+								<TD width="38" bgcolor="#cfffcf">5:00</TD>
+							</TR>
+							<TR>
+								<TD width="100" bgcolor="#cfffcf">Empty Sky</TD>
+								<TD width="98" bgcolor="#cfffcf">Bruce Springsteen</TD>
+								<TD width="70" bgcolor="#cfffcf">Rock</TD>
+								<TD width="38" bgcolor="#cfffcf">3:34</TD>
+							</TR>
+							<TR>
+								<TD width="100" height="25" bgcolor="#cfffcf">Worlds Apart</TD>
+								<TD width="98" height="25" bgcolor="#cfffcf">Bruce Springsteen</TD>
+								<TD width="70" height="25" bgcolor="#cfffcf">Rock</TD>
+								<TD width="38" height="25" bgcolor="#cfffcf">6:07</TD>
+							</TR>
+							<TR>
+								<TD width="100" bgcolor="#cfffcf">Paradise</TD>
+								<TD width="98" bgcolor="#cfffcf">Bruce Springsteen</TD>
+								<TD width="70" bgcolor="#cfffcf">Rock</TD>
+								<TD width="38" bgcolor="#cfffcf">5:39</TD>
+							</TR>
+							<TR>
+								<TD width="100" bgcolor="#cfffcf">You're Missing</TD>
+								<TD width="98" bgcolor="#cfffcf">Bruce Springsteen</TD>
+								<TD width="70" bgcolor="#cfffcf">Rock</TD>
+								<TD width="38" bgcolor="#cfffcf">5:11</TD>
+							</TR>
+							<TR>
+								<TD width="100" bgcolor="#cfffcf">Countin' On A Miracle
+								</TD>
+								<TD width="98" bgcolor="#cfffcf">Bruce Springsteen</TD>
+								<TD width="70" bgcolor="#cfffcf">Rock</TD>
+								<TD width="38" bgcolor="#cfffcf">4:44</TD>
+							</TR>
+						</TABLE>
+					</P>
+					<P>
+					<P>
+						<hr>
+					</P>
+					<H2>Review Tests</H2>
+					<P>The previous test verified that we could retrieve recordings through the Web 
+						service using the live database. The Recording used in the previous test 
+						because overtime reviews will be added to this recording which would cause our 
+						tests to fail. Therefore, we will use some of the sample data that is stored in 
+						the database to verify that review information is returned correctly.</P>
+					<P>
+						<TABLE id="Table4" height="106" cellSpacing="0" cellPadding="3" border="1">
+							<TR>
+								<TD colSpan="3" height="21">fit.<A href="wiki.cgi?ActionFixture">ActionFixture</A>
+								</TD>
+							</TR>
+							<TR>
+								<TD height="21">start
+								</TD>
+								<TD height="21">CustomerTests.CatalogAdapter
+								</TD>
+								<TD height="21">&nbsp;</TD>
+							</TR>
+							<TR>
+								<TD height="19">enter
+								</TD>
+								<TD height="19">FindByRecordingId
+								</TD>
+								<TD height="19">100001
+								</TD>
+							</TR>
+							<TR>
+								<TD height="21">check
+								</TD>
+								<TD height="21">Found
+								</TD>
+								<TD height="21" bgcolor="#cfffcf">true
+								</TD>
+							</TR>
+							<TR>
+								<TD height="21">check</TD>
+								<TD height="21">AverageRating</TD>
+								<TD height="21" bgcolor="#cfffcf">2</TD>
+							</TR>
+						</TABLE>
+					</P>
+					<P>
+						<TABLE id="Table7" cellSpacing="0" cellPadding="3" width="521" border="1">
+							<TR>
+								<TD width="508" colSpan="4">CustomerTests.ReviewDisplay
+								</TD>
+							</TR>
+							<TR>
+								<TD width="100">ReviewerName()</TD>
+								<TD width="98">Content()</TD>
+								<TD width="70">Rating()</TD>
+							</TR>
+							<TR>
+								<TD width="100" bgcolor="#cfffcf">Sample Reviewer</TD>
+								<TD width="98" bgcolor="#cfffcf">Inspiration was low</TD>
+								<TD width="70" bgcolor="#cfffcf">1</TD>
+							</TR>
+							<TR>
+								<TD width="100" bgcolor="#cfffcf">Example Reviewer</TD>
+								<TD width="98" bgcolor="#cfffcf">Could be better</TD>
+								<TD width="70" bgcolor="#cfffcf">3</TD>
+							</TR>
+							<TR>
+								<TD width="100" bgcolor="#cfffcf">Test Reviewer</TD>
+								<TD width="98" bgcolor="#cfffcf">I thought it was great</TD>
+								<TD width="70" bgcolor="#cfffcf">4</TD>
+							</TR>
+						</TABLE>
+					</P>
+					<HR>
+					<P></P>
+					<P></P>
+					<H2>Non-Existent Recording</H2>
+					<P>This test will attempt to retrieve a recording that is not present in the 
+						database.
+					</P>
+					<P>
+						<TABLE id="Table5" height="106" cellSpacing="0" cellPadding="3" border="1">
+							<TR>
+								<TD colSpan="3" height="21">fit.<A href="wiki.cgi?ActionFixture">ActionFixture</A>
+								</TD>
+							</TR>
+							<TR>
+								<TD height="21">start
+								</TD>
+								<TD height="21">CustomerTests.CatalogAdapter
+								</TD>
+								<TD height="21">&nbsp;</TD>
+							</TR>
+							<TR>
+								<TD height="19">enter
+								</TD>
+								<TD height="19">FindByRecordingId
+								</TD>
+								<TD height="19">100002
+								</TD>
+							</TR>
+							<TR>
+								<TD height="21">check
+								</TD>
+								<TD height="21">Found
+								</TD>
+								<TD height="21" bgcolor="#cfffcf">False
+								</TD>
+							</TR>
+						</TABLE>
+					</P>
+					<HR>
+					<P>Report Statistics for this run:&nbsp;</P>
+					<P></P>
+					<P></P>
+					<table cellSpacing="0" cellPadding="3" border="1">
+						<tr>
+							<td colSpan="2">fit.Summary</td>
+						</tr>
+<tr>
+<td>run elapsed time</td>
+<td>0:00.35</td></tr>
+<tr>
+<td>run date</td>
+<td>12/30/2003 11:53:41 AM</td></tr>
+<tr>
+<td>output file</td>
+<td>CatalogResult.html</td></tr>
+<tr>
+<td>input update</td>
+<td>12/30/2003 11:01:39 AM</td></tr>
+<tr>
+<td>input file</td>
+<td>CatalogTest.html</td></tr>
+<tr>
+<td>fixture path</td>
+<td>.;build;build\bin;obj;bin;bin\Debug;bin\Release;C:\book-example\v2\fit.runner\bin\Debug</td></tr>
+<tr>
+<td>counts</td>
+<td>78 right, 0 wrong, 0 ignored, 0 exceptions</td></tr></table>
+					</WIKI>
+					<p>&nbsp;</p>
+				</td>
+			</tr>
+			<tr>
+				<td vAlign="top" align="center">&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+		</table>
+	</body>
+</html>
