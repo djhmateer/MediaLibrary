@@ -105,7 +105,7 @@
   <Class Name="DataAccessLayerTests.ArtistFixture" Collapsed="true">
     <Position X="0.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAgAAAAAAAAAAgQAAAAAAAAQAAEBAACAAAEAAAAAA=</HashCode>
+      <HashCode>AAAAgAAAAAAAAAAgQAAAAAAAAAAAEBAACAAAEAAAAAA=</HashCode>
       <FileName>Entities\ArtistFixture.cs</FileName>
     </TypeIdentifier>
   </Class>

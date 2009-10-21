@@ -72,7 +72,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="ClassDiagram1.cd" />
+    <None Include="ArtistFixtureDiagram.cd" />
     <None Include="overallClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

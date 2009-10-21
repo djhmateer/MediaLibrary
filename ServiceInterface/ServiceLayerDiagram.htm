@@ -1,0 +1,30 @@
+﻿<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>ServiceLayerDiagram</title>
+  </head>
+  <body><img usemap="#DiagramMap" border="0" src="ServiceLayerDiagram.png"><map name="DiagramMap">
+      <area shape="rectangle" title="protected abstract DataModel.RecordingDataSet.Recording FindById(long recordingId)" coords="370,294,512,309">
+      <area shape="rectangle" title="public RecordingDto FindByRecordingId(long id)" coords="370,310,512,325">
+      <area shape="rectangle" title="public abstract class CatalogService" coords="369,225,512,334">
+      <area shape="rectangle" title="public RecordingDto FindByRecordingId(long id)" coords="10,401,224,416">
+      <area shape="rectangle" title="public class CatalogServiceInterface : System.Web.Services.WebService" coords="9,321,224,426">
+      <area shape="rectangle" title="protected override DataModel.RecordingDataSet.Recording FindById(long id)" coords="322,449,512,464">
+      <area shape="rectangle" title="public class DatabaseCatalogService : ServiceInterface.CatalogService" coords="321,369,512,474">
+      <area shape="rectangle" title="public static class RecordingAssembler" coords="369,81,584,129">
+      <area shape="rectangle" title="public class RecordingDto" coords="609,105,752,153">
+      <area shape="rectangle" title="public class TrackDto" coords="609,9,752,57">
+      <area shape="rectangle" title="public class ReviewDto" coords="609,201,752,249">
+      <area shape="rectangle" title="DatabaseCatalogService inherits from ServiceInterface.CatalogService" coords="417,335,440,369">
+      <area shape="rectangle" title="CatalogServiceInterface has a field named service of type DatabaseCatalogService." coords="225,398,320,398">
+      <area shape="rectangle" title="RecordingDto has a field named tracksField of type TrackDto[]." coords="681,58,681,105">
+      <area shape="rectangle" title="RecordingDto has a field named reviewsField of type ReviewDto[]." coords="681,154,681,201">
+      <area shape="rectangle" title="RecordingDto has a property named tracks of type TrackDto[]." coords="723,58,723,105">
+      <area shape="rectangle" title="RecordingDto has a property named reviews of type ReviewDto[]." coords="723,154,723,201">
+      <area shape="rectangle" title="3. FindById creates new RecordingDataSet and calls DAL.Catalog(Id) which returns a populated RecordingDataSet.Recording" coords="496,495,659,601">
+      <area shape="rectangle" title="2.FindByRecordingId calls FindById(Id)&#xD;&#xA;&#xD;&#xA;4.Recording assember passing in the RecordingDataSet.Recording, and returns a RecordingDTO" coords="134,145,341,245">
+      <area shape="rectangle" title="1. news up DatabaseCatalogService&#xD;&#xA;when webservice is passed an id, it calls FindByRecordingId(Id)" coords="60,449,223,545">
+      <area shape="rectangle" title="5. Data displayed at webservice in XML" coords="77,568,240,639">
+    </map>
+  </body>
+</html>

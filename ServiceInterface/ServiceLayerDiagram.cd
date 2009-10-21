@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="3. FindById creates new RecordingDataSet and calls DAL.Catalog(Id) which returns a populated RecordingDataSet.Recording">
+    <Position X="5.823" Y="5.562" Height="1.115" Width="1.7" />
+  </Comment>
+  <Comment CommentText="2.FindByRecordingId calls FindById(Id)&#xD;&#xA;&#xD;&#xA;4.Recording assember passing in the RecordingDataSet.Recording, and returns a RecordingDTO">
+    <Position X="2.052" Y="1.917" Height="1.052" Width="2.158" />
+  </Comment>
+  <Comment CommentText="1. news up DatabaseCatalogService&#xD;&#xA;when webservice is passed an id, it calls FindByRecordingId(Id)">
+    <Position X="1.276" Y="5.083" Height="1.01" Width="1.7" />
+  </Comment>
+  <Comment CommentText="5. Data displayed at webservice in XML">
+    <Position X="1.458" Y="6.323" Height="0.75" Width="1.7" />
+  </Comment>
+  <Class Name="ServiceInterface.CatalogService">
+    <Position X="4.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CatalogService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ServiceInterface.CatalogServiceInterface">
+    <Position X="0.75" Y="3.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>CatalogServiceInterface.asmx.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="service" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ServiceInterface.DatabaseCatalogService">
+    <Position X="4" Y="4.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DatabaseCatalogService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ServiceInterface.RecordingAssembler" Collapsed="true">
+    <Position X="4.5" Y="1.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAIAAAAAAIAAAAAAACAAAAAACAAAEA=</HashCode>
+      <FileName>RecordingAssembler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RecordingDto" Collapsed="true">
+    <Position X="7" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QBCAggAARAAAIIBEKAAAACBAFAAAICAAAIAIAAAAAgA=</HashCode>
+      <FileName>RecordingDto.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="tracksField" />
+      <Field Name="reviewsField" />
+      <Property Name="tracks" />
+      <Property Name="reviews" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TrackDto" Collapsed="true">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAgAIAUAAAAAAAAAAAAABAAAAAACgAAAAAAgAAAgA=</HashCode>
+      <FileName>RecordingDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ReviewDto" Collapsed="true">
+    <Position X="7" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAQAACAAAAAAQAAACIAAAAAIAAAAgA=</HashCode>
+      <FileName>RecordingDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>
