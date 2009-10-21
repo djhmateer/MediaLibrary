@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Comment CommentText="requires a RecordingDataSet, and recordingID&#xD;&#xA;returns a RecordingDataSet.Recording">
+    <Position X="1.365" Y="6.469" Height="0.542" Width="3.44" />
+  </Comment>
+  <Class Name="DataAccessLayer.ArtistGateway" Collapsed="true">
+    <Position X="8" Y="2.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAAAAAAAAADAAABAAUJAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ArtistGateway.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Catalog" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DataAccessLayer.GenreGateway" Collapsed="true">
+    <Position X="8" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAAAAAAAAADAAABAAUJAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GenreGateway.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Catalog" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DataAccessLayer.LabelGateway" Collapsed="true">
+    <Position X="8" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAAAAAAAAADAAABAAUJAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LabelGateway.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Catalog" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DataModel.RecordingDataSet" Collapsed="true">
+    <Position X="5.25" Y="2.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="DataModel.RecordingDataSet.TracksDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="DataModel.RecordingDataSet.Artist" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="DataModel.RecordingDataSet.Label" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="DataModel.RecordingDataSet.ArtistChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="DataModel.RecordingDataSet.LabelChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="DataModel.RecordingDataSet.ArtistsDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="DataModel.RecordingDataSet.RecordingChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="DataModel.RecordingDataSet.RecordingChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="DataModel.RecordingDataSet.ReviewChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="DataModel.RecordingDataSet.TrackChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="DataModel.RecordingDataSet.ReviewerChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="DataModel.RecordingDataSet.ReviewsDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="DataModel.RecordingDataSet.RecordingsDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="DataModel.RecordingDataSet.Recording" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="DataModel.RecordingDataSet.LabelChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="DataModel.RecordingDataSet.Review" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="DataModel.RecordingDataSet.ReviewChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="DataModel.RecordingDataSet.Reviewer" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="DataModel.RecordingDataSet.ReviewersDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="DataModel.RecordingDataSet.GenreChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="DataModel.RecordingDataSet.Genre" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="DataModel.RecordingDataSet.GenresDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="DataModel.RecordingDataSet.ArtistChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="DataModel.RecordingDataSet.LabelsDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="DataModel.RecordingDataSet.GenreChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Delegate Name="DataModel.RecordingDataSet.ReviewerChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="DataModel.RecordingDataSet.TrackChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="DataModel.RecordingDataSet.Track" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="DataAccessLayer.Catalog">
+    <Position X="1.25" Y="5" Width="5.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Catalog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.RecordingGateway" Collapsed="true">
+    <Position X="8" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAAAAAAAAADAAABAAUJAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RecordingGateway.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Catalog" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DataAccessLayer.ReviewerGateway" Collapsed="true">
+    <Position X="8" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAAAAAAAAADAAABAAUJAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ReviewerGateway.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Catalog" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DataAccessLayer.ReviewGateway" Collapsed="true">
+    <Position X="8" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAQAAEAAIAQAAAAQAAABAAABAAUBAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>ReviewGateway.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Catalog" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

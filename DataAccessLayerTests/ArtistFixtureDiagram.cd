@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Table Data Gateway">
+    <Position X="5.594" Y="0.5" Height="0.531" Width="1.356" />
+  </Comment>
+  <Comment CommentText="RecordingDataSet code automatically generated C#.   This has all the SQL&#xD;&#xA;&#xD;&#xA;Anytime we want ArtistGateway to do something eg Insert.. we new up a RecordingDataSet, and pass it into ArtistGateway">
+    <Position X="6.542" Y="3.406" Height="1.385" Width="1.908" />
+  </Comment>
+  <Comment CommentText="Nested types:&#xD;&#xA;Artist.Id&#xD;&#xA;Artist.Name&#xD;&#xA;Artist.GetRecordings()&#xD;&#xA;Artist.GetTracks()&#xD;&#xA;&#xD;&#xA;Genre.Id&#xD;&#xA;Genre.Name&#xD;&#xA;Genre.GetTracks()&#xD;&#xA;etc..&#xD;&#xA;&#xD;&#xA;">
+    <Position X="4.26" Y="5.031" Height="1.562" Width="2.242" />
+  </Comment>
+  <Comment CommentText="FindById calls&#xD;&#xA;DataTable (ie Artists).Select&#xD;&#xA;which returns appropriate record by calling the DB.">
+    <Position X="10.844" Y="1.646" Height="0.75" Width="1.7" />
+  </Comment>
+  <Class Name="DataAccessLayerTests.ArtistFixture">
+    <Position X="0.5" Y="1.25" Width="5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAgQAAAAAAAAAAAEBAACAAAEAAAAAA=</HashCode>
+      <FileName>Entities\ArtistFixture.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="gateway" />
+      <Field Name="recordingDataSet" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DataAccessLayer.ArtistGateway">
+    <Position X="6.5" Y="1.25" Width="3.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="DataModel.RecordingDataSet" Collapsed="true">
+    <Position X="4" Y="4" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="DataModel.RecordingDataSet.TracksDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="DataModel.RecordingDataSet.Artist">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="DataModel.RecordingDataSet.Label" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="DataModel.RecordingDataSet.ArtistChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="DataModel.RecordingDataSet.LabelChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="DataModel.RecordingDataSet.ArtistsDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="DataModel.RecordingDataSet.RecordingChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="DataModel.RecordingDataSet.RecordingChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="DataModel.RecordingDataSet.ReviewChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="DataModel.RecordingDataSet.TrackChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="DataModel.RecordingDataSet.ReviewerChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="DataModel.RecordingDataSet.ReviewsDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="DataModel.RecordingDataSet.RecordingsDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="DataModel.RecordingDataSet.Recording" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="DataModel.RecordingDataSet.LabelChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="DataModel.RecordingDataSet.Review" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="DataModel.RecordingDataSet.ReviewChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="DataModel.RecordingDataSet.Reviewer" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="DataModel.RecordingDataSet.ReviewersDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="DataModel.RecordingDataSet.GenreChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="DataModel.RecordingDataSet.Genre">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="DataModel.RecordingDataSet.GenresDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="DataModel.RecordingDataSet.ArtistChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="DataModel.RecordingDataSet.LabelsDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="DataModel.RecordingDataSet.GenreChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Delegate Name="DataModel.RecordingDataSet.ReviewerChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="DataModel.RecordingDataSet.TrackChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="DataModel.RecordingDataSet.Track" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

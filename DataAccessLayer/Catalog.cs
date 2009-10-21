@@ -5,6 +5,7 @@ namespace DataAccessLayer
 {
     public class Catalog
     {
+    
         static public RecordingDataSet.Recording FindByRecordingId(RecordingDataSet recordingDataSet, long recordingId)
         {
             SqlConnection connection = null;

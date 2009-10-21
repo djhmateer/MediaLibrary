@@ -32,6 +32,17 @@ namespace DataAccessLayer
             findByRecordingIdAdapter = new SqlDataAdapter(findByRecordingIdCommand);
         }
 
+        public Catalog Catalog
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
+
         public long Insert(RecordingDataSet recordingDataSet, int rating, string content)
         {
             long reviewId = IdGenerator.GetNextId(recordingDataSet.Reviews.TableName, connection);

@@ -23,6 +23,17 @@ namespace DataAccessLayer
             builder = new SqlCommandBuilder(adapter);
         }
 
+        public Catalog Catalog
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
+
         public long Insert(RecordingDataSet recordingDataSet, string genreName)
         {
             long genreId = IdGenerator.GetNextId(recordingDataSet.Genres.TableName, connection);

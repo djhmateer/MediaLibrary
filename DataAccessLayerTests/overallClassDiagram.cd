@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DataAccessLayerTests.CatalogFixture" Collapsed="true">
+    <Position X="16.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AA4BAhAgQQAAAAAAQAAKBASAAAAQAAAQAICBEBAABCA=</HashCode>
+      <FileName>CatalogFixture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayerTests.ConnectionFixture" Collapsed="true">
+    <Position X="11.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAABABAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ConnectionFixture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayerTests.GenreFixture" Collapsed="true">
+    <Position X="2.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAgAAAAAAAkQAAAAQAAAAAAABAgAAAAAAAAAAI=</HashCode>
+      <FileName>Entities\GenreFixture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayerTests.LabelFixture" Collapsed="true">
+    <Position X="4.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAQAEAAgkQAAABAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\LabelFixture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayerTests.RecordingGatewayFixture" Collapsed="true">
+    <Position X="11.75" Y="4.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAIAAAgAAAAAAAABAAAIAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\RecordingGatewayFixture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayerTests.ReviewerFixture" Collapsed="true">
+    <Position X="6.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAIAAgwQAAABAAAAAAAAAAAAAAAAAAAhAA=</HashCode>
+      <FileName>Entities\ReviewerFixture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayerTests.ReviewFixture" Collapsed="true">
+    <Position X="8" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACABAAAAAAAAhgQAgABIAAAQAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Entities\ReviewFixture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayerTests.TrackFixture" Collapsed="true">
+    <Position X="9.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAIAQAAAAAhgQAAABAQAAAEAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\TrackFixture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayerTests.RecordingBuilder" Collapsed="true">
+    <Position X="12.75" Y="3.25" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAgBABAAQQAIAEEACAAAEAAAAQEAAAAQAAAAEAAAAQA=</HashCode>
+      <FileName>RecordingBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayerTests.RecordingFixture" Collapsed="true">
+    <Position X="10.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAADEgAAAgIAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>RecordingFixture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayerTests.ReviewReviewerFixture" Collapsed="true">
+    <Position X="0.5" Y="3" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Relationships\ReviewReviewerFixture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayerTests.TrackRecordingFixture" Collapsed="true">
+    <Position X="9.25" Y="4.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAIIAAAAAAAAAAAAAAAAAAAAAAAoAAAAEAAAA=</HashCode>
+      <FileName>Relationships\TrackRecordingFixture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayerTests.IdGeneratorFixture" Collapsed="true">
+    <Position X="14" Y="1.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utilities\IdGeneratorFixture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayerTests.SimpleDatabaseTests" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>EAAAgAAAEAAAAAAAgAABAAAAAAAAAGAAAAAAAAAQAAA=</HashCode>
+      <FileName>Utilities\SimpleDatabaseTests.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.GenreGateway">
+    <Position X="2.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="DataAccessLayerTests.ArtistFixture" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAgQAAAAAAAAQAAEBAACAAAEAAAAAA=</HashCode>
+      <FileName>Entities\ArtistFixture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.ArtistGateway">
+    <Position X="0.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>
