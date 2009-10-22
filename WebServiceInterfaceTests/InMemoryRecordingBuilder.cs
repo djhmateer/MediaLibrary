@@ -35,7 +35,7 @@ namespace ServiceInterface
             genre.Name = "Genre";
             dataSet.Genres.AddGenre(genre);
 
-            int trackCount = 2;
+            int trackCount = 3;
             ArrayList tracks = new ArrayList(trackCount);
             for (int i = 0; i < trackCount; i++)
             {

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="">
+    <Position X="1" Y="0.906" Height="0.75" Width="1.7" />
+  </Comment>
+  <Class Name="CustomerTests.CatalogAdapter">
+    <Position X="1.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAQKAEAgACAAAAAAAAAAAACACAAAAAAAAAA=</HashCode>
+      <FileName>CatalogAdapter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

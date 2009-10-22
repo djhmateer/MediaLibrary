@@ -58,6 +58,10 @@
     <Compile Include="TrackAssemblerFixture.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CustomerTests\CustomerTests.csproj">
+      <Project>{2CF6B858-B54D-44E4-B505-9E28E61E0F1F}</Project>
+      <Name>CustomerTests</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DataAccessLayerTests\DataAccessLayerTests.csproj">
       <Project>{D4EC22F6-AB63-49BB-BBA0-D652D0CC0C94}</Project>
       <Name>DataAccessLayerTests</Name>
@@ -74,6 +78,10 @@
       <Project>{93DDB8EE-B533-41DD-AF08-38F65245B753}</Project>
       <Name>ServiceInterface</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CatalogServiceStubFixture.cd" />
+    <None Include="DatabaseCatalogSerivceDiagram.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

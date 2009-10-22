@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Data.SqlClient;
 using DataAccessLayer;
 using DataModel;
@@ -13,12 +14,14 @@ namespace DataAccessLayerTests
         long recordingId;
         long artistId;
         long labelId;
+        long trackId;
 
         RecordingGateway recordingGateway;
         ArtistGateway artistGateway;
         LabelGateway labelGateway;
+        TrackGateway trackGateway;
 
-        public RecordingDataSet Make_sample_recording_with_artist_id_and_label_id(SqlConnection connection)
+        public RecordingDataSet make_sample_recording_with_artist_id_and_label_id_and_insert_into_database(SqlConnection connection)
         {
             RecordingDataSet recordingDataSet = new RecordingDataSet();
 
@@ -30,7 +33,21 @@ namespace DataAccessLayerTests
             labelId = labelGateway.Insert(recordingDataSet, "Label");
             recordingId = recordingGateway.Insert(recordingDataSet, title, releaseDate, artistId, labelId);
 
-            recordingGateway.FindById(recordingId, recordingDataSet);
+            trackGateway = new TrackGateway(connection);
+            trackId = trackGateway.Insert(recordingDataSet, "Track", 120);
+            RecordingDataSet.Track inMemoryDataset_table_track = trackGateway.FindById(trackId, recordingDataSet);
+
+           // RecordingDataSet rec = new RecordingDataSet();
+            
+           // RecordingDataSet.Recording recording = recordingGateway.FindById(recordingId, rec);
+           //// // link the sample_recording to the track we just created
+           //inMemoryDataset_table_track.Recording = recording;
+           //trackGateway.Update(rec);
+
+
+           // recordingGateway.FindById(recordingId, recordingDataSet);
+
+
 
             return recordingDataSet;
         }

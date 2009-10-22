@@ -1,0 +1,59 @@
+﻿<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>CatalogFixtureDiagram</title>
+  </head>
+  <body><img usemap="#DiagramMap" border="0" src="CatalogFixtureDiagram.png"><map name="DiagramMap">
+      <area shape="rectangle" title="private long artistId" coords="10,209,295,224">
+      <area shape="rectangle" title="private long genreId" coords="10,225,295,240">
+      <area shape="rectangle" title="private long labelId" coords="10,241,295,256">
+      <area shape="rectangle" title="private DataModel.RecordingDataSet.Recording loadedRecording" coords="10,257,295,272">
+      <area shape="rectangle" title="private DataModel.RecordingDataSet recordingDataSet" coords="10,272,295,287">
+      <area shape="rectangle" title="private long recordingId" coords="10,288,295,303">
+      <area shape="rectangle" title="private long reviewerId" coords="10,304,295,319">
+      <area shape="rectangle" title="private long reviewId" coords="10,320,295,335">
+      <area shape="rectangle" title="private DataAccessLayer.TrackGateway trackGateway" coords="10,336,295,351">
+      <area shape="rectangle" title="private long trackId1" coords="10,351,295,366">
+      <area shape="rectangle" title="private long trackId2" coords="10,367,295,382">
+      <area shape="rectangle" title="public void ArtistOfTheRecording()" coords="10,404,295,419">
+      <area shape="rectangle" title="public void ArtistOfTheTrack()" coords="10,420,295,435">
+      <area shape="rectangle" title="public void CountReviews()" coords="10,435,295,450">
+      <area shape="rectangle" title="public void CountTracks()" coords="10,451,295,466">
+      <area shape="rectangle" title="public void GenreOfTheTrack()" coords="10,467,295,482">
+      <area shape="rectangle" title="public void LabelOfTheRecording()" coords="10,483,295,498">
+      <area shape="rectangle" title="public void NotNull()" coords="10,498,295,513">
+      <area shape="rectangle" title="public void ReviewerOfTheReview()" coords="10,514,295,529">
+      <area shape="rectangle" title="public void SetUp_a_known_recording_then_verify_it_brings_back_the_same_data()" coords="10,530,295,545">
+      <area shape="rectangle" title="public void TearDown()" coords="10,546,295,561">
+      <area shape="rectangle" title="public void track1_duration_should_be_120_secs()" coords="10,562,295,577">
+      <area shape="rectangle" title="public void track2_duration_should_be_130_secs()" coords="10,577,295,592">
+      <area shape="rectangle" title="public class CatalogFixture : DataAccessLayerTests.ConnectionFixture" coords="9,129,296,602">
+      <area shape="rectangle" title="public Catalog()" coords="561,630,702,645">
+      <area shape="rectangle" title="public static DataModel.RecordingDataSet.Recording FindByRecordingId(DataModel.RecordingDataSet recordingDataSet, long recordingId)" coords="561,646,702,661">
+      <area shape="rectangle" title="public class DataAccessLayer.Catalog" coords="560,561,703,670">
+      <area shape="rectangle" title="public abstract class ConnectionFixture" coords="33,9,176,57">
+      <area shape="rectangle" title="CatalogFixture inherits from DataAccessLayerTests.ConnectionFixture" coords="105,58,121,129">
+      <area shape="rectangle" title="public class DataAccessLayer.RecordingGateway" coords="584,57,727,105">
+      <area shape="rectangle" title="public class DataAccessLayer.ArtistGateway" coords="584,153,727,201">
+      <area shape="rectangle" title="public class DataAccessLayer.LabelGateway" coords="584,297,727,345">
+      <area shape="rectangle" title="public class DataAccessLayer.GenreGateway" coords="584,225,727,273">
+      <area shape="rectangle" title="public class DataAccessLayer.ReviewGateway" coords="584,369,727,417">
+      <area shape="rectangle" title="public class DataAccessLayer.ReviewerGateway" coords="584,441,727,489">
+      <area shape="rectangle" title="CatalogFixture has a field named recordingGateway of type RecordingGateway." coords="240,84,584,129">
+      <area shape="rectangle" title="CatalogFixture has a field named reviewGateway of type ReviewGateway." coords="297,393,584,393">
+      <area shape="rectangle" title="CatalogFixture has a field named reviewerGateway of type ReviewerGateway." coords="297,476,584,476">
+      <area shape="rectangle" title="CatalogFixture has a field named labelGateway of type LabelGateway." coords="297,326,584,326">
+      <area shape="rectangle" title="CatalogFixture has a field named artistGateway of type ArtistGateway." coords="297,168,584,168">
+      <area shape="rectangle" title="CatalogFixture has a field named genreGateway of type GenreGateway." coords="297,262,584,262">
+      <area shape="rectangle" title="RecordingGateway has a property named Catalog of type Catalog." coords="704,82,763,577">
+      <area shape="rectangle" title="ArtistGateway has a property named Catalog of type Catalog." coords="704,178,763,613">
+      <area shape="rectangle" title="LabelGateway has a property named Catalog of type Catalog." coords="704,321,763,635">
+      <area shape="rectangle" title="GenreGateway has a property named Catalog of type Catalog." coords="704,249,763,594">
+      <area shape="rectangle" title="ReviewGateway has a property named Catalog of type Catalog." coords="704,393,763,656">
+      <area shape="rectangle" title="ReviewerGateway has a property named Catalog of type Catalog." coords="644,490,644,561">
+      <area shape="rectangle" title="1. Setup makes a new recording in the db with 2 tracks" coords="43,639,205,710">
+      <area shape="rectangle" title="2. Setup calls Catalog.FindByRecordingId with the Id just passed by" coords="42,723,204,794">
+      <area shape="rectangle" title="3. Each test verifies that what was sent to db, is what Catalog brought back" coords="246,639,408,710">
+    </map>
+  </body>
+</html>

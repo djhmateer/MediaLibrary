@@ -1,4 +1,3 @@
-using DataAccessLayer;
 using DataModel;
 using NUnit.Framework;
 
@@ -8,13 +7,13 @@ namespace DataAccessLayerTests
     {
         RecordingBuilder builder = new RecordingBuilder();
         RecordingDataSet dataSet;
-        RecordingDataSet.Recording sample_recording;
+        RecordingDataSet.Recording recording;
 
         [SetUp]
         public void SetUp()
         {
-            dataSet = builder.Make_sample_recording_with_artist_id_and_label_id(Connection);
-            sample_recording = dataSet.Recordings[0];
+            dataSet = builder.make_sample_recording_with_artist_id_and_label_id_and_insert_into_database(Connection);
+            recording = dataSet.Recordings[0];
         }
 
         [TearDown]
@@ -28,14 +27,15 @@ namespace DataAccessLayerTests
             get { return builder; }
         }
 
-        public RecordingDataSet.Recording Sample_recording
+        public RecordingDataSet.Recording Recording
         {
-            get { return sample_recording; }
+            get { return recording; }
         }
 
         public RecordingDataSet RecordingDataSet
         {
             get { return dataSet; }
         }
+
     }
 }

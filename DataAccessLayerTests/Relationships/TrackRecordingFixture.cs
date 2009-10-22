@@ -18,7 +18,7 @@ namespace DataAccessLayerTests
             newTrackId = trackGateway.Insert(RecordingDataSet, "Track", 120);
             RecordingDataSet.Track inMemoryDataset_table_track = trackGateway.FindById(newTrackId, RecordingDataSet);
             // link the sample_recording to the track we just created
-            inMemoryDataset_table_track.Recording = Sample_recording;
+            inMemoryDataset_table_track.Recording = Recording;
             trackGateway.Update(RecordingDataSet);
         }
 
@@ -33,16 +33,17 @@ namespace DataAccessLayerTests
         [Test]
         public void number_of_tracks_in_the_recording_should_be_1()
         {
-            Assert.AreEqual(1, Sample_recording.GetTracks().Length);
+            Assert.AreEqual(1, Recording.GetTracks().Length);
         }
 
         [Test]
         public void ParentId()
         {
-            foreach (RecordingDataSet.Track track in Sample_recording.GetTracks())
+            foreach (RecordingDataSet.Track track in Recording.GetTracks())
             {
-                Assert.AreEqual(Sample_recording.Id, track.RecordingId);
+                Assert.AreEqual(Recording.Id, track.RecordingId);
             }
         }
+
     }
 }

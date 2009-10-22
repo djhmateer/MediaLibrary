@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="1. makes 2 tracks and populates everything else">
+    <Position X="6.937" Y="0.656" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="2. returns back the recording just made above.. stubbing what would happen from the database">
+    <Position X="7.573" Y="3.958" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="3. calls RecordingAssembler.WriteDto, then returns RecordingDto">
+    <Position X="8.031" Y="2.49" Height="0.75" Width="1.815" />
+  </Comment>
+  <Class Name="ServiceInterface.CatalogServiceStubFixture">
+    <Position X="1.25" Y="3" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAiAAAQAAAACAAAAAAAACEQAIAAAAAA=</HashCode>
+      <FileName>CatalogServiceStubFixture.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="dto" />
+      <Field Name="service" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="RecordingDto">
+    <Position X="11.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="tracks" />
+      <Property Name="reviews" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TrackDto">
+    <Position X="11.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ReviewDto">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ServiceInterface.StubCatalogService">
+    <Position X="4.75" Y="4.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAACAAAAAAAAAA=</HashCode>
+      <FileName>StubCatalogService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ServiceInterface.InMemoryRecordingBuilder">
+    <Position X="4" Y="0.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>InMemoryRecordingBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ServiceInterface.CatalogService">
+    <Position X="6.25" Y="2" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ServiceInterface.RecordingAssembler" Collapsed="true">
+    <Position X="8.75" Y="1.5" Width="2.25" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

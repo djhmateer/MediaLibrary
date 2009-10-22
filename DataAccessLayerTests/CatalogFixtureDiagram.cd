@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="1. Setup makes a new recording in the db with 2 tracks">
+    <Position X="1.354" Y="7.062" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="2. Setup calls Catalog.FindByRecordingId with the Id just passed by">
+    <Position X="1.344" Y="7.938" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="3. Each test verifies that what was sent to db, is what Catalog brought back">
+    <Position X="3.469" Y="7.062" Height="0.75" Width="1.7" />
+  </Comment>
+  <Class Name="DataAccessLayerTests.CatalogFixture">
+    <Position X="1" Y="1.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AA4BEhAgQQAAAAAAQEAKBACAAAAQAIAQAICBEBAABCA=</HashCode>
+      <FileName>CatalogFixture.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="recordingGateway" />
+      <Field Name="reviewGateway" />
+      <Field Name="reviewerGateway" />
+      <Field Name="labelGateway" />
+      <Field Name="artistGateway" />
+      <Field Name="genreGateway" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DataAccessLayer.Catalog">
+    <Position X="6.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="DataAccessLayerTests.ConnectionFixture" Collapsed="true">
+    <Position X="1.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAABABAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ConnectionFixture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.RecordingGateway" Collapsed="true">
+    <Position X="7" Y="1" Width="1.5" />
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="Catalog" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DataAccessLayer.ArtistGateway" Collapsed="true">
+    <Position X="7" Y="2" Width="1.5" />
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="Catalog" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DataAccessLayer.LabelGateway" Collapsed="true">
+    <Position X="7" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="Catalog" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DataAccessLayer.GenreGateway" Collapsed="true">
+    <Position X="7" Y="2.75" Width="1.5" />
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="Catalog" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DataAccessLayer.ReviewGateway" Collapsed="true">
+    <Position X="7" Y="4.25" Width="1.5" />
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="Catalog" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DataAccessLayer.ReviewerGateway" Collapsed="true">
+    <Position X="7" Y="5" Width="1.5" />
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="Catalog" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DataAccessLayerTests.RecordingBuilder">
+    <Position X="14" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAgBABQAQQAIAEEACAAAEAAAAAEAAAAQCIAAEAAAAQA=</HashCode>
+      <FileName>RecordingBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayerTests.RecordingFixture">
+    <Position X="10" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAQAABEgAAAAIAAAACAAAAAAAAAI=</HashCode>
+      <FileName>RecordingFixture.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="hasa" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DataAccessLayerTests.RecordingGatewayFixture">
+    <Position X="8.25" Y="5.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAIAAAgAAAAAAAABAAAIAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\RecordingGatewayFixture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayerTests.TrackRecordingFixture">
+    <Position X="12" Y="5.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAIIAAAAAAAAAAAAAAAAAAAAAAAoAAAAEAAAA=</HashCode>
+      <FileName>Relationships\TrackRecordingFixture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayerTests.ConnectionFixture" Collapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAABABAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ConnectionFixture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccessLayer.RecordingGateway" Collapsed="true">
+    <Position X="15" Y="6" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="DataAccessLayer.TrackGateway" Collapsed="true">
+    <Position X="15" Y="5.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

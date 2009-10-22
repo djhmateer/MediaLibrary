@@ -13,32 +13,32 @@ namespace ServiceInterface
         public void SetUp()
         {
             base.SetUp();
-            dto = gateway.FindByRecordingId(Sample_recording.Id);
+            dto = gateway.FindByRecordingId(Recording.Id);
         }
 
         [Test]
         public void Id()
         {
-            Assert.AreEqual(Sample_recording.Id, dto.id);
+            Assert.AreEqual(Recording.Id, dto.id);
         }
 
         [Test]
         public void Title()
         {
-            Assert.AreEqual(Sample_recording.Title, dto.title);
+            Assert.AreEqual(Recording.Title, dto.title);
         }
 
         [Test]
         public void TrackCount()
         {
-            Assert.AreEqual(0, Sample_recording.GetTracks().Length);
+            Assert.AreEqual(0, Recording.GetTracks().Length);
             Assert.IsNull(dto.tracks);
         }
 
         [Test]
         public void ReviewCount()
         {
-            Assert.AreEqual(0, Sample_recording.GetReviews().Length);
+            Assert.AreEqual(0, Recording.GetReviews().Length);
             Assert.IsNull(dto.reviews);
         }
 

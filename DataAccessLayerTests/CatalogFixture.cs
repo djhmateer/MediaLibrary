@@ -14,7 +14,8 @@ namespace DataAccessLayerTests
         long reviewerId;
         long recordingId;
         long reviewId;
-        long trackId;
+        long trackId1;
+        long trackId2;
 
         RecordingGateway recordingGateway;
         TrackGateway trackGateway;
@@ -46,11 +47,14 @@ namespace DataAccessLayerTests
             reviewerId = reviewerGateway.Insert(recordingDataSet, "Reviewer");
             recordingId = recordingGateway.Insert(recordingDataSet, "Recording Title", new DateTime(1999, 1, 12), artistId, labelId);
             reviewId = reviewGateway.Insert(recordingDataSet, 1, "Review");
-            trackId = trackGateway.Insert(recordingDataSet, "Track Title", 120);
+
+            trackId1 = trackGateway.Insert(recordingDataSet, "Track Title", 120);
+            trackId2 = trackGateway.Insert(recordingDataSet, "Track Title", 130);
 
             RecordingDataSet.Recording recording = recordingGateway.FindById(recordingId, recordingDataSet);
             RecordingDataSet.Review review = reviewGateway.FindById(reviewId, recordingDataSet);
-            RecordingDataSet.Track track = trackGateway.FindById(trackId, recordingDataSet);
+            RecordingDataSet.Track track1 = trackGateway.FindById(trackId1, recordingDataSet);
+            RecordingDataSet.Track track2 = trackGateway.FindById(trackId2, recordingDataSet);
             RecordingDataSet.Label label = labelGateway.FindById(labelId, recordingDataSet);
             RecordingDataSet.Genre genre = genreGateway.FindById(genreId, recordingDataSet);
             RecordingDataSet.Artist artist = artistGateway.FindById(artistId, recordingDataSet);
@@ -59,9 +63,14 @@ namespace DataAccessLayerTests
             // setup the relationships
             recording.Artist = artist;
             recording.Label = label;
-            track.Recording = recording;
-            track.Artist = artist;
-            track.Genre = genre;
+            track1.Recording = recording;
+            track1.Artist = artist;
+            track1.Genre = genre;
+
+            track2.Recording = recording;
+            track2.Artist = artist;
+            track2.Genre = genre;
+
             review.Recording = recording;
             review.Reviewer = reviewer;
 
@@ -82,7 +91,7 @@ namespace DataAccessLayerTests
             genreGateway.Delete(recordingDataSet, genreId);
             reviewerGateway.Delete(recordingDataSet, reviewerId);
             reviewGateway.Delete(recordingDataSet, reviewId);
-            trackGateway.Delete(recordingDataSet, trackId);
+            trackGateway.Delete(recordingDataSet, trackId1);
             recordingGateway.Delete(recordingDataSet, recordingId);
         }
 
@@ -96,8 +105,23 @@ namespace DataAccessLayerTests
         public void CountTracks()
         {
             RecordingDataSet.Track[] loadedTracks = loadedRecording.GetTracks();
-            Assert.AreEqual(1, loadedTracks.Length);
+            Assert.AreEqual(2, loadedTracks.Length);
         }
+
+        [Test]
+        public void track1_duration_should_be_120_secs()
+        {
+            RecordingDataSet.Track[] loadedTracks = loadedRecording.GetTracks();
+            Assert.AreEqual(120, loadedTracks[0].Duration);
+        }
+
+        [Test]
+        public void track2_duration_should_be_130_secs()
+        {
+            RecordingDataSet.Track[] loadedTracks = loadedRecording.GetTracks();
+            Assert.AreEqual(130, loadedTracks[1].Duration);
+        }
+
 
         [Test]
         public void CountReviews()

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Recording Fixture is in DAL&#xD;&#xA;it news up a RecordingBuilder ">
+    <Position X="3.385" Y="1.719" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="only does artist_id and label_id">
+    <Position X="10.708" Y="1.208" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="">
+    <Position X="12.057" Y="3.323" Height="0.75" Width="1.7" />
+  </Comment>
+  <Class Name="ServiceInterface.DatabaseCatalogServiceFixture">
+    <Position X="3.75" Y="4.75" Width="3.5" />
+    <AssociationLine Name="service" Type="ServiceInterface.DatabaseCatalogService" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.25" Y="5.886" />
+        <Point X="8.75" Y="5.886" />
+        <Point X="8.75" Y="6.516" />
+        <Point X="10.156" Y="6.516" />
+        <Point X="10.156" Y="6.266" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAADAAAIAAAAAgAAAAAAAAAAAAAAAAAAMQAAAAAAAA=</HashCode>
+      <FileName>DatabaseCatalogServiceFixture.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="service" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ServiceInterface.DatabaseCatalogService">
+    <Position X="9" Y="5" Width="2.25" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="DataAccessLayerTests.RecordingFixture">
+    <Position X="6" Y="1.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="DataAccessLayerTests.ConnectionFixture" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="DataAccessLayerTests.RecordingBuilder">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ServiceInterface.CatalogService">
+    <Position X="9.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="CustomerTests.CatalogAdapter" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="CustomerTests.CatalogAdapterTest" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

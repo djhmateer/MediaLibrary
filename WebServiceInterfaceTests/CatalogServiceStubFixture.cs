@@ -1,4 +1,3 @@
-using DataAccessLayer;
 using DataModel;
 using NUnit.Framework;
 
@@ -44,8 +43,21 @@ namespace ServiceInterface
         [Test]
         public void TrackCount()
         {
-            Assert.AreEqual(recording.GetTracks().Length,
-                dto.tracks.Length);
+            Assert.AreEqual(recording.GetTracks().Length, dto.tracks.Length);
+            Assert.AreEqual(3, dto.tracks.Length);
+        }
+
+        [Test]
+        public void total_track_duration_should_be_300_secs()
+        {
+            RecordingDataSet.Track[] loadedTracks = recording.GetTracks();
+            int duration = 0;
+            foreach (RecordingDataSet.Track track in loadedTracks)
+            {
+                duration += track.Duration;
+            }
+            Assert.AreEqual(duration, dto.totalRunTime);
+            Assert.AreEqual(300, dto.totalRunTime);
         }
 
         [Test]

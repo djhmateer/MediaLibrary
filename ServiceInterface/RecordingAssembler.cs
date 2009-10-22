@@ -28,7 +28,8 @@ namespace ServiceInterface
             int index = 0;
             foreach (RecordingDataSet.Track track in recording.GetTracks())
             {
-                recordingDto.tracks[index++] = new TrackDto();
+                //recordingDto.tracks[index++] = new TrackDto();
+                recordingDto.tracks[index++] = WriteTrack(track);
             }
         }
 

@@ -1,0 +1,30 @@
+problem:  when passed a FindByRecordingID = 4 to CatalogAdapter it returns all as expected except duration, which is 0.
+
+[done]check database
+  
+DAL works - catalogFixture tests tracks
+  in CatalogFixture, have added in 2 tracks of different lengths and they work... there is no aggregator, just Track.Duration 
+
+
+Service - CatalogServiceStubFixture works.. so RecordingAssembler working
+	totalRunTime is populating well
+	however each track isn't coming back.
+	problem was in RecordingAssembler
+
+CatalogServiceInterface looks like it is working.
+
+the top layer test still gives 0 for duration
+
+testing DatabaseCatalogServiceFixture
+  trying to make sure that the tracks are being inserted properly.
+  not working... cant get it to insert the correct recordingID into db
+
+
+[done]make a class diagram.
+problem is the test isn't strong enough..
+   want a full recording with all tables to be populated and tested
+	this is done somewhere!
+
+look at source check file.
+
+in DatabaseCatalogServiceFixture... the dto.totalRunTime.. is 0
