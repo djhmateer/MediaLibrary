@@ -28,3 +28,9 @@ problem is the test isn't strong enough..
 look at source check file.
 
 in DatabaseCatalogServiceFixture... the dto.totalRunTime.. is 0
+----------------
+demo git
+get code live on github
+play with forking
+
+look at application
