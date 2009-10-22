@@ -54,6 +54,7 @@ namespace ServiceInterface
             {
                 runTime += track.Duration;
             }
+            dto.totalRunTimeSpecified = true;
             dto.totalRunTime = runTime;
         }
 
@@ -81,6 +82,7 @@ namespace ServiceInterface
 
         static void WriteAverageRating(RecordingDto recordingDto, RecordingDataSet.Recording recording)
         {
+            recordingDto.averageRatingSpecified = true;
             if (recording.GetReviews().Length == 0)
             {
                 recordingDto.averageRating = 0;

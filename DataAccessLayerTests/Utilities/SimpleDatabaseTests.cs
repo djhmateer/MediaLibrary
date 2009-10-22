@@ -54,6 +54,26 @@ namespace DataAccessLayerTests
         }
 
         [Test]
+        public void InsertdataInterface()
+        {
+            connection.Open();
+
+            string insertString =
+                @"
+                 insert into Artist
+                 (id, name)
+                 values ('12346', 'Dave')";
+
+            // bit more flexible.. SQL / Oracle
+            IDbCommand cmd = connection.CreateCommand();
+            cmd.CommandText = insertString;
+            
+
+            cmd.ExecuteNonQuery();
+            connection.Close();
+        }
+
+        [Test]
         public void UpdateData()
         {
             connection.Open();

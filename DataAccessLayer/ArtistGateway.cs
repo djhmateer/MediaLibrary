@@ -23,17 +23,6 @@ namespace DataAccessLayer
             builder = new SqlCommandBuilder(adapter);
         }
 
-        public Catalog Catalog
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
-
         public long Insert(RecordingDataSet recordingDataSet, string artistName)
         {
             long artistId = IdGenerator.GetNextId(recordingDataSet.Artists.TableName, connection);
